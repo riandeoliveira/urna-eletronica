@@ -1,10 +1,20 @@
-import { Greetings } from "components/Greetings";
+import { Keyboard } from "components/Keyboard";
+import { Screen } from "components/Screen";
 import type { NextPage } from "next";
+import UrnBox from "../../public/assets/images/urn-box.svg";
+import UrnBrand from "../../public/assets/images/urn-brand.svg";
 
 const Home: NextPage = (): JSX.Element => {
   return (
-    <div className="font-primary h-screen bg-zinc-900 flex items-center justify-center flex-col gap-2">
-      <Greetings />
+    <div className="flex items-center justify-center min-h-screen bg-zinc-800">
+      <UrnBox />
+      <div className="flex flex-col gap-20 absolute translate-x-[-3px] translate-y-[-60px]">
+        <Screen />
+        <div className="flex gap-[15px] items-end justify-center">
+          <UrnBrand />
+          <Keyboard />
+        </div>
+      </div>
     </div>
   );
 };
