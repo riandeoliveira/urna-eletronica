@@ -23,6 +23,7 @@ module.exports = {
       },
       fontFamily: {
         primary: ["Inter", "sans-serif"],
+        screen: ["Arial", "sans-serif"],
       },
       screens: {
         desktop: "2560px",
