@@ -1,0 +1,107 @@
+[
+  {
+    "nome": "Basquete",
+    "numero": "91001",
+    "partido": "PEsp",
+    "sexo": "M",
+    "foto": "91001_basquete"
+  },
+  {
+    "nome": "Hipismo",
+    "numero": "91002",
+    "partido": "PEsp",
+    "sexo": "M",
+    "foto": "91002_hipismo"
+  },
+  {
+    "nome": "Patinação",
+    "numero": "91003",
+    "partido": "PEsp",
+    "sexo": "F",
+    "foto": "91003_patinacao"
+  },
+  {
+    "nome": "Frevo",
+    "numero": "92001",
+    "partido": "PMus",
+    "sexo": "M",
+    "foto": "92001_frevo"
+  },
+  {
+    "nome": "Jazz",
+    "numero": "92002",
+    "partido": "PMus",
+    "sexo": "M",
+    "foto": "92002_jazz"
+  },
+  {
+    "nome": "Música Eletrônica",
+    "numero": "92003",
+    "partido": "PMus",
+    "sexo": "F",
+    "foto": "92003_musica_eletronica"
+  },
+  {
+    "nome": "Garçom",
+    "numero": "93001",
+    "partido": "PProf",
+    "sexo": "M",
+    "foto": "93001_garcom"
+  },
+  {
+    "nome": "Motorista",
+    "numero": "93002",
+    "partido": "PProf",
+    "sexo": "M",
+    "foto": "93002_motorista"
+  },
+  {
+    "nome": "Bombeira",
+    "numero": "93003",
+    "partido": "PProf",
+    "sexo": "F",
+    "foto": "93003_bombeira"
+  },
+  {
+    "nome": "Páscoa",
+    "numero": "94001",
+    "partido": "PFest",
+    "sexo": "F",
+    "foto": "94001_pascoa"
+  },
+  {
+    "nome": "Réveillon",
+    "numero": "94002",
+    "partido": "PFest",
+    "sexo": "M",
+    "foto": "94002_reveillon"
+  },
+  {
+    "nome": "Festa da Uva",
+    "numero": "94003",
+    "partido": "PFest",
+    "sexo": "F",
+    "foto": "94003_festa_da_uva"
+  },
+  {
+    "nome": "Iara",
+    "numero": "95001",
+    "partido": "PFolc",
+    "sexo": "F",
+    "foto": "95001_iara"
+  },
+  {
+    "nome": "Barba-Ruiva",
+    "numero": "95002",
+    "partido": "PFolc",
+    "sexo": "M",
+    "foto": "95002_barba_ruiva"
+  },
+  {
+    "nome": "Bicho-Papão",
+    "numero": "95003",
+    "partido": "PFolc",
+    "sexo": "M",
+    "foto": "95003_bicho_papao"
+  }
+]

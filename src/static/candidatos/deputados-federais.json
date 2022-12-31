@@ -1,0 +1,142 @@
+[
+  {
+    "nome": "Atletismo",
+    "numero": "9101",
+    "partido": "PEsp",
+    "sexo": "M",
+    "foto": "9101_atletismo"
+  },
+  {
+    "nome": "Ginástica Artística",
+    "numero": "9102",
+    "partido": "PEsp",
+    "sexo": "F",
+    "foto": "9102_ginastica"
+  },
+  {
+    "nome": "Boxe",
+    "numero": "9103",
+    "partido": "PEsp",
+    "sexo": "M",
+    "foto": "9103_boxe"
+  },
+  {
+    "nome": "Halterofilismo",
+    "numero": "9104",
+    "partido": "PEsp",
+    "sexo": "M",
+    "foto": "9104_halterofilismo"
+  },
+  {
+    "nome": "Sertanejo",
+    "numero": "9201",
+    "partido": "PMus",
+    "sexo": "M",
+    "foto": "9201_sertanejo"
+  },
+  {
+    "nome": "Reggae",
+    "numero": "9202",
+    "partido": "PMus",
+    "sexo": "M",
+    "foto": "9202_reggae"
+  },
+  {
+    "nome": "Música Clássica",
+    "numero": "9203",
+    "partido": "PMus",
+    "sexo": "F",
+    "foto": "9203_musica_classica"
+  },
+  {
+    "nome": "Ópera",
+    "numero": "9204",
+    "partido": "PMus",
+    "sexo": "F",
+    "foto": "9204_opera"
+  },
+  {
+    "nome": "Artista",
+    "numero": "9301",
+    "partido": "PProf",
+    "sexo": "M",
+    "foto": "9301_artista"
+  },
+  {
+    "nome": "Operário",
+    "numero": "9302",
+    "partido": "PProf",
+    "sexo": "M",
+    "foto": "9302_operario"
+  },
+  {
+    "nome": "Astronauta",
+    "numero": "9303",
+    "partido": "PProf",
+    "sexo": "M",
+    "foto": "9303_astronauta"
+  },
+  {
+    "nome": "Cozinheira",
+    "numero": "9304",
+    "partido": "PProf",
+    "sexo": "F",
+    "foto": "9304_cozinheira"
+  },
+  {
+    "nome": "Boi-bumbá",
+    "numero": "9401",
+    "partido": "PFest",
+    "sexo": "M",
+    "foto": "9401_boi_bumba"
+  },
+  {
+    "nome": "Peão de Boiadeiro",
+    "numero": "9402",
+    "partido": "PFest",
+    "sexo": "M",
+    "foto": "9402_peao_de_boiadeiro"
+  },
+  {
+    "nome": "Oktoberfest",
+    "numero": "9403",
+    "partido": "PFest",
+    "sexo": "F",
+    "foto": "9403_oktoberfest"
+  },
+  {
+    "nome": "Semana Farroupilha",
+    "numero": "9404",
+    "partido": "PFest",
+    "sexo": "F",
+    "foto": "9404_semana_farroupilha"
+  },
+  {
+    "nome": "Lobisomem",
+    "numero": "9501",
+    "partido": "PFolc",
+    "sexo": "M",
+    "foto": "9501_lobisomem"
+  },
+  {
+    "nome": "Cuca",
+    "numero": "9502",
+    "partido": "PFolc",
+    "sexo": "F",
+    "foto": "9502_cuca"
+  },
+  {
+    "nome": "Negrinho do Pastoreio",
+    "numero": "9503",
+    "partido": "PFolc",
+    "sexo": "M",
+    "foto": "9503_negrinho_do_pastoreio"
+  },
+  {
+    "nome": "Mapinguari",
+    "numero": "9504",
+    "partido": "PFolc",
+    "sexo": "M",
+    "foto": "9504_mapinguari"
+  }
+]
