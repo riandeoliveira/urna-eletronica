@@ -1,0 +1,27 @@
+[
+  {
+    "nome_masculino": "Deputado Federal",
+    "nome_feminino": "Deputada Federal",
+    "libras_gif": "depFederal.gif"
+  },
+  {
+    "nome_masculino": "Deputado Estadual",
+    "nome_feminino": "Deputada Estadual",
+    "libras_gif": "depEstadual.gif"
+  },
+  {
+    "nome_masculino": "Senador",
+    "nome_feminino": "Senadora",
+    "libras_gif": "senador.gif"
+  },
+  {
+    "nome_masculino": "Governador",
+    "nome_feminino": "Governadora",
+    "libras_gif": "governador.gif"
+  },
+  {
+    "nome_masculino": "Presidente",
+    "nome_feminino": "Presidente",
+    "libras_gif": "presidente.gif"
+  }
+]
