@@ -1,19 +1,21 @@
 import Image from "next/image";
-import { ScreenFooter } from "./ScreenFooter";
+import { Footer } from "./Footer";
+import { Header } from "./Header";
+import { KeyInput } from "./KeyInput";
 
 export const Screen = (): JSX.Element => {
   return (
     <div className="bg-black w-[609px] h-[336px] pt-[20.86px] pr-[37px] pb-[19.7px] pl-9">
       <div className="w-[536px] h-[295.45px] bg-white font-screen">
         <div className="flex flex-col pl-[4px]">
-          <p className="text-[15px] text-[#333333] pt-[5px] tracking-[0.5px]">
-            SEU VOTO PARA
-          </p>
-          <span className="text-[22px] tracking-[1.5px] pl-[150px]">
-            Senadora
-          </span>
-          <div className="text-[15px]">
-            <span>Número:</span>
+          <Header nome="João Frango" sexo="F" />
+          <div className="text-[15px] flex gap-[40px]">
+            <span className="flex items-center">Número:</span>
+            <div className="flex gap-[2px] translate-x-[-8px]">
+              {[0, 0, 0, 0].map((candidato, index) => (
+                <KeyInput key={index} />
+              ))}
+            </div>
           </div>
           <div className="flex gap-[40px]">
             <div className="flex flex-col">
@@ -36,7 +38,7 @@ export const Screen = (): JSX.Element => {
             </div>
           </div>
         </div>
-        <div className="w-fit text-center absolute translate-x-[445px] translate-y-[-225px]">
+        <div className="w-fit text-center absolute translate-x-[446px] translate-y-[-235px]">
           <Image
             src="/assets/images/aaa.jpg"
             alt="Imagem do candidato selecionado"
@@ -45,7 +47,7 @@ export const Screen = (): JSX.Element => {
           />
           <span className="text-[14px]">Senadora</span>
         </div>
-        <div className="flex gap-1 text-center absolute translate-x-[392px] translate-y-[-74px]">
+        <div className="flex gap-1 text-center absolute translate-x-[392px] translate-y-[-86px]">
           <div>
             <Image
               src="/assets/images/bbb.jpg"
@@ -65,7 +67,7 @@ export const Screen = (): JSX.Element => {
             <span className="text-[10px]">2º Suplente</span>
           </div>
         </div>
-        <ScreenFooter />
+        <Footer />
       </div>
     </div>
   );

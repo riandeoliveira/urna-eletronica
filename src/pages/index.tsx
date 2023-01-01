@@ -1,5 +1,5 @@
-import { Keyboard } from "components/Keyboard";
-import { Screen } from "components/Screen";
+import { Keyboard } from "components/keyboard/Keyboard";
+import { Screen } from "components/screen/Screen";
 import type { NextPage } from "next";
 import UrnBox from "../../public/assets/images/urn-box.svg";
 import UrnBrand from "../../public/assets/images/urn-brand.svg";
