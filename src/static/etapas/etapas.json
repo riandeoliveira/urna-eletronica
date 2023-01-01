@@ -1,27 +1,37 @@
 [
   {
-    "nome_masculino": "Deputado Federal",
-    "nome_feminino": "Deputada Federal",
-    "libras_gif": "depFederal.gif"
+    "cargo": {
+      "nome_masculino": "Deputado Federal",
+      "nome_feminino": "Deputada Federal"
+    },
+    "libras": "depFederal.gif"
   },
   {
-    "nome_masculino": "Deputado Estadual",
-    "nome_feminino": "Deputada Estadual",
-    "libras_gif": "depEstadual.gif"
+    "cargo": {
+      "nome_masculino": "Deputado Estadual",
+      "nome_feminino": "Deputada Estadual"
+    },
+    "libras": "depEstadual.gif"
   },
   {
-    "nome_masculino": "Senador",
-    "nome_feminino": "Senadora",
-    "libras_gif": "senador.gif"
+    "cargo": {
+      "nome_masculino": "Senador",
+      "nome_feminino": "Senadora"
+    },
+    "libras": "senador.gif"
   },
   {
-    "nome_masculino": "Governador",
-    "nome_feminino": "Governadora",
-    "libras_gif": "governador.gif"
+    "cargo": {
+      "nome_masculino": "Governador",
+      "nome_feminino": "Governadora"
+    },
+    "libras": "governador.gif"
   },
   {
-    "nome_masculino": "Presidente",
-    "nome_feminino": "Presidente",
-    "libras_gif": "presidente.gif"
+    "cargo": {
+      "nome_masculino": "Presidente",
+      "nome_feminino": "Presidente"
+    },
+    "libras": "presidente.gif"
   }
 ]
