@@ -5,5 +5,6 @@ interface NomeTipo {
 
 export interface Etapa {
   cargo: NomeTipo;
+  campo_digitos: string[];
   libras: string;
 }

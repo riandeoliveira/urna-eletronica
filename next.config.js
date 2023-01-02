@@ -2,6 +2,9 @@
 
 const nextConfig = {
   reactStrictMode: true,
+  images: {
+    domains: ["www.tse.jus.br"],
+  },
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/,

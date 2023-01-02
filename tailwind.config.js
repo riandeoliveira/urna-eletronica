@@ -8,6 +8,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      animation: {
+        "fast-pulse": "pulse",
+        "fade-pulse": "pulse",
+      },
       boxShadow: {
         "digit-btn": "inset -3px -3px 0px 1px rgba(12, 12, 12, 0.8)",
         "white-btn": "inset -3px -3px 0px 1px rgba(131, 131, 131, 0.8)",
@@ -24,6 +28,9 @@ module.exports = {
       fontFamily: {
         primary: ["Inter", "sans-serif"],
         screen: ["Arial", "sans-serif"],
+      },
+      keyframes: {
+        "strong-pulse": { opacity: ".1" },
       },
       screens: {
         desktop: "2560px",
