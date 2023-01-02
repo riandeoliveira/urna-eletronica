@@ -9,10 +9,10 @@ export const Stage = (): JSX.Element => {
 
   return (
     <>
-      <div className="translate-x-[80px] translate-y-[43px]">
+      <div className="translate-x-[85px] translate-y-[43px]">
         <PoliticalOffice />
       </div>
-      <div className="translate-x-[70px] translate-y-[76px]">
+      <div className="translate-x-[75px] translate-y-[76px]">
         <KeyInput />
       </div>
       {keyInput.length === 0 && (

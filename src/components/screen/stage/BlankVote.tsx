@@ -6,7 +6,7 @@ export const BlankVote = (): JSX.Element => {
   return (
     <>
       <Header />
-      <div className="translate-x-[80px] translate-y-[16px]">
+      <div className="translate-x-[85px] translate-y-[16px]">
         <PoliticalOffice />
       </div>
       <div className="translate-x-[100px] translate-y-[56px]">
