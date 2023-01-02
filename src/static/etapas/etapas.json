@@ -2,7 +2,8 @@
   {
     "cargo": {
       "nome_masculino": "Deputado Federal",
-      "nome_feminino": "Deputada Federal"
+      "nome_feminino": "Deputada Federal",
+      "tipo": "deputado_federal"
     },
     "campo_digitos": ["", "", "", ""],
     "libras": "depFederal.gif"
@@ -10,7 +11,8 @@
   {
     "cargo": {
       "nome_masculino": "Deputado Estadual",
-      "nome_feminino": "Deputada Estadual"
+      "nome_feminino": "Deputada Estadual",
+      "tipo": "deputado_estadual"
     },
     "campo_digitos": ["", "", "", "", ""],
     "libras": "depEstadual.gif"
@@ -18,7 +20,8 @@
   {
     "cargo": {
       "nome_masculino": "Senador",
-      "nome_feminino": "Senadora"
+      "nome_feminino": "Senadora",
+      "tipo": "senador"
     },
     "campo_digitos": ["", "", ""],
     "libras": "senador.gif"
@@ -26,7 +29,8 @@
   {
     "cargo": {
       "nome_masculino": "Governador",
-      "nome_feminino": "Governadora"
+      "nome_feminino": "Governadora",
+      "tipo": "governador"
     },
     "campo_digitos": ["", ""],
     "libras": "governador.gif"
@@ -34,7 +38,8 @@
   {
     "cargo": {
       "nome_masculino": "Presidente",
-      "nome_feminino": "Presidente"
+      "nome_feminino": "Presidente",
+      "tipo": "presidente"
     },
     "campo_digitos": ["", ""],
     "libras": "presidente.gif"

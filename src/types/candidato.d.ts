@@ -3,11 +3,22 @@ interface Partido {
   numero: string;
 }
 
+type Cargo =
+  | "deputado_estadual"
+  | "deputado_federal"
+  | "governador"
+  | "presidente"
+  | "senador"
+  | "suplente"
+  | "vice_governador"
+  | "vice_presidente";
+
 interface CandidatoBase {
   nome: string;
   numero: string;
   partido: Partido;
   sexo: "M" | "F";
+  cargo: Cargo;
   foto: string;
 }
 
