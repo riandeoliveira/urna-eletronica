@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>Urna Eletronica</h1>
+  <h1>Urna Eletrônica</h1>
 </div>
 
 ## 📚 Sobre

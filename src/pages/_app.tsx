@@ -8,7 +8,7 @@ const App = ({ Component, pageProps }: AppProps): JSX.Element => {
   return (
     <>
       <Head>
-        <title>Urna Eletronica</title>
+        <title>Urna Eletrônica</title>
       </Head>
       <Provider store={store}>
         <Component {...pageProps} />
