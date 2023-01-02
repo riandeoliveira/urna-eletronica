@@ -13,18 +13,18 @@ export const NullVote = (): JSX.Element => {
       <div className="translate-x-[75px] translate-y-[76px]">
         <KeyInput />
       </div>
-      <span className="absolute text-[15px] translate-x-[3px] translate-y-[48px]">
+      <span className="absolute text-[15px] translate-x-[3px] translate-y-[81px]">
         Número:
       </span>
-      <div className="translate-x-[3px] translate-y-[90px]">
+      <div className="translate-x-[3px] translate-y-[123px]">
         <span className="text-[20px] tracking-[0.5px]">NÚMERO ERRADO</span>
       </div>
-      <div className="translate-x-[156px] translate-y-[88px]">
+      <div className="translate-x-[156px] translate-y-[121px]">
         <span className="text-[36px] tracking-[0.5px] animate-fast-pulse">
           VOTO NULO
         </span>
       </div>
-      <div className="translate-y-[80px]">
+      <div className="translate-y-[112px]">
         <Footer />
       </div>
     </>

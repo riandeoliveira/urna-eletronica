@@ -21,7 +21,7 @@ export const Stage = (): JSX.Element => {
           alt="Mulher fazendo sinais com as mãos utilizando a Linguagem Brasileira de Sinais (LIBRAS)"
           width={188}
           height={180}
-          className="translate-x-[348px] translate-y-[48px]"
+          className="absolute translate-x-[348px] translate-y-[81px]"
         />
       )}
     </>
