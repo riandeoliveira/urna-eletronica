@@ -14,8 +14,7 @@ export const Screen = (): JSX.Element => {
         {/* <InfoArea />
         <ImageArea />
         <Footer /> */}
-        <Stage />
-        {isBlankVote && <BlankVote />}
+        {isBlankVote ? <BlankVote /> : <Stage />}
       </div>
     </div>
   );
