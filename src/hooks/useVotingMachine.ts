@@ -20,7 +20,7 @@ export const useVotingMachine = (): UseVotingMachine => {
   const [playKeyPressSound] = useSound<string>(
     "/assets/audios/key-press-sound.mp3"
   );
-  const { isBlankVote, keyInput } = useSelector(
+  const { isBlankVote, keyInput, stage } = useSelector(
     (state: RootState) => state.votingMachine
   );
 
@@ -35,9 +35,7 @@ export const useVotingMachine = (): UseVotingMachine => {
   const onKeyButtonPress = (keyPress: string): void => {
     playKeyPressSound();
 
-    console.log(keyInput);
-
-    if (!isBlankVote) {
+    if (!isBlankVote && keyInput.length !== stage.campo_digitos.length) {
       dispatch(setKeyInput(keyPress));
     }
   };
@@ -45,9 +43,11 @@ export const useVotingMachine = (): UseVotingMachine => {
   const onBlankButtonPress = (): void => {
     playKeyPressSound();
 
-    dispatch(setIsBlankVote(true));
+    if (keyInput.length === 0) {
+      dispatch(setIsBlankVote(true));
 
-    handleVoteChecking();
+      handleVoteChecking();
+    }
   };
 
   const onCorrectsButtonPress = (): void => {
