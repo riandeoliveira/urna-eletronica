@@ -1,4 +1,5 @@
 interface IVotingMachineActionTypes {
+  CLEAR_KEY_INPUT: string;
   SET_IS_BLANK_VOTE: string;
   SET_IS_CHECKING_VOTE: string;
   SET_KEY_INPUT: string;
@@ -6,6 +7,7 @@ interface IVotingMachineActionTypes {
 }
 
 export const VotingMachineActionTypes: IVotingMachineActionTypes = {
+  CLEAR_KEY_INPUT: "votingMachine/clearKeyInput",
   SET_IS_BLANK_VOTE: "votingMachine/setIsBlankVote",
   SET_IS_CHECKING_VOTE: "votingMachine/setIsCheckingVote",
   SET_KEY_INPUT: "votingMachine/setKeyInput",

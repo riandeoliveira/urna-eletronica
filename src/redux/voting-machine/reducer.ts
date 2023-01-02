@@ -27,6 +27,12 @@ export const votingMachineReducer = (
   action: PayloadAction<any>
 ): VotingMachineState => {
   switch (action.type) {
+    case VotingMachineActionTypes.CLEAR_KEY_INPUT:
+      return {
+        ...state,
+        keyInput: [],
+      };
+
     case VotingMachineActionTypes.SET_KEY_INPUT:
       return {
         ...state,

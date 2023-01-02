@@ -14,7 +14,9 @@ export const Stage = (): JSX.Element => {
       <div className="translate-x-[80px] translate-y-[43px]">
         <PoliticalOffice />
       </div>
-      <KeyInput />
+      <div className="translate-x-[70px] translate-y-[76px]">
+        <KeyInput />
+      </div>
       {keyInput.length === 0 && (
         <Image
           src={`https://www.tse.jus.br/hotsites/simulador-de-votacao/image/libras/${stage.libras}`}

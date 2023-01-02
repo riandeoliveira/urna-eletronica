@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux";
-import { setKeyInput } from "redux/voting-machine/actions";
+import { clearKeyInput, setKeyInput } from "redux/voting-machine/actions";
 import useSound from "use-sound";
 
 interface UseVotingMachine {
@@ -27,6 +27,8 @@ export const useVotingMachine = (): UseVotingMachine => {
 
   const onCorrectsButtonPress = (): void => {
     playKeyPressSound();
+
+    dispatch(clearKeyInput());
   };
 
   const onConfirmButtonPress = (): void => {
