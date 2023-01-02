@@ -1,5 +1,10 @@
 import { useDispatch } from "react-redux";
-import { clearKeyInput, setKeyInput } from "redux/voting-machine/actions";
+import {
+  clearKeyInput,
+  setIsBlankVote,
+  setIsCheckingVote,
+  setKeyInput,
+} from "redux/voting-machine/actions";
 import useSound from "use-sound";
 
 interface UseVotingMachine {
@@ -15,6 +20,14 @@ export const useVotingMachine = (): UseVotingMachine => {
     "/assets/audios/key-press-sound.mp3"
   );
 
+  const handleVoteChecking = (): void => {
+    const MILLISECONDS: number = 1000;
+
+    dispatch(setIsCheckingVote(true));
+
+    setTimeout(() => dispatch(setIsCheckingVote(false)), MILLISECONDS);
+  };
+
   const onKeyButtonPress = (keyPress: string): void => {
     playKeyPressSound();
 
@@ -23,12 +36,17 @@ export const useVotingMachine = (): UseVotingMachine => {
 
   const onBlankButtonPress = (): void => {
     playKeyPressSound();
+
+    dispatch(setIsBlankVote(true));
+
+    handleVoteChecking();
   };
 
   const onCorrectsButtonPress = (): void => {
     playKeyPressSound();
 
     dispatch(clearKeyInput());
+    dispatch(setIsBlankVote(false));
   };
 
   const onConfirmButtonPress = (): void => {

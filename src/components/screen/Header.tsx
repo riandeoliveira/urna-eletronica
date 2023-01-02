@@ -1,7 +1,7 @@
 export const Header = (): JSX.Element => {
   return (
-    <header>
-      <p className="text-[15px] text-[#333333] pt-[5px] tracking-[0.5px]">
+    <header className="pt-[5px] pl-[4px]">
+      <p className="text-[15px] text-[#333333] tracking-[0.5px]">
         SEU VOTO PARA
       </p>
     </header>

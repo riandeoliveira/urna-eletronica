@@ -33,6 +33,18 @@ export const votingMachineReducer = (
         keyInput: [],
       };
 
+    case VotingMachineActionTypes.SET_IS_BLANK_VOTE:
+      return {
+        ...state,
+        isBlankVote: action.payload,
+      };
+
+    case VotingMachineActionTypes.SET_IS_CHECKING_VOTE:
+      return {
+        ...state,
+        isCheckingVote: action.payload,
+      };
+
     case VotingMachineActionTypes.SET_KEY_INPUT:
       return {
         ...state,
