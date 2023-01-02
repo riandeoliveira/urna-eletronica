@@ -1,13 +1,11 @@
 import Image from "next/image";
 import { useSelector } from "react-redux";
-import type { RootState } from "types/redux";
+import { selectVotingMachineStates } from "redux/voting-machine/selectors";
 import { PoliticalOffice } from "../candidate/PoliticalOffice";
 import { KeyInput } from "../KeyInput";
 
 export const Stage = (): JSX.Element => {
-  const { keyInput, stage } = useSelector(
-    (state: RootState) => state.votingMachine
-  );
+  const { keyInput, stage } = useSelector(selectVotingMachineStates);
 
   return (
     <>

@@ -1,10 +1,8 @@
 import { useSelector } from "react-redux";
-import type { RootState } from "types/redux";
+import { selectVotingMachineStates } from "redux/voting-machine/selectors";
 
 export const KeyInput = (): JSX.Element => {
-  const { stage, keyInput } = useSelector(
-    (state: RootState) => state.votingMachine
-  );
+  const { stage, keyInput } = useSelector(selectVotingMachineStates);
 
   return (
     <div className="flex gap-[1px]">

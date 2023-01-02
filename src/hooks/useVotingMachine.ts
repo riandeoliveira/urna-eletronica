@@ -5,7 +5,7 @@ import {
   setIsCheckingVote,
   setKeyInput,
 } from "redux/voting-machine/actions";
-import type { RootState } from "types/redux";
+import { selectVotingMachineStates } from "redux/voting-machine/selectors";
 import useSound from "use-sound";
 
 interface UseVotingMachine {
@@ -24,12 +24,8 @@ export const useVotingMachine = (): UseVotingMachine => {
     "/assets/audios/confirm-vote-sound.mp3"
   );
   const { isBlankVote, keyInput, stage, isCheckingVote } = useSelector(
-    (state: RootState) => state.votingMachine
+    selectVotingMachineStates
   );
-
-  const findCandidateByNumber = (): void => {
-    
-  };
 
   const handleVoteChecking = (): void => {
     const MILLISECONDS: number = 1000;

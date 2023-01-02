@@ -1,12 +1,10 @@
 import { useSelector } from "react-redux";
-import type { RootState } from "types/redux";
+import { selectVotingMachineStates } from "redux/voting-machine/selectors";
 import { BlankVote } from "./stage/BlankVote";
 import { Stage } from "./stage/Stage";
 
 export const Screen = (): JSX.Element => {
-  const { isBlankVote } = useSelector(
-    (state: RootState) => state.votingMachine
-  );
+  const { isBlankVote } = useSelector(selectVotingMachineStates);
 
   return (
     <div className="bg-black w-[609px] h-[336px] pt-[20.86px] pr-[37px] pb-[19.7px] pl-9">

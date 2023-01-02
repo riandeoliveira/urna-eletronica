@@ -1,10 +1,8 @@
 import { useSelector } from "react-redux";
-import type { RootState } from "types/redux";
+import { selectVotingMachineStates } from "redux/voting-machine/selectors";
 
 export const PoliticalOffice = (): JSX.Element => {
-  const { stage, currentCandidate } = useSelector(
-    (state: RootState) => state.votingMachine
-  );
+  const { stage, currentCandidate } = useSelector(selectVotingMachineStates);
 
   return (
     <span className="text-[22px] tracking-[1.5px]">

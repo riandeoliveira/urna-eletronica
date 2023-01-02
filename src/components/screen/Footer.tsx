@@ -1,11 +1,9 @@
 import { useSelector } from "react-redux";
-import type { RootState } from "types/redux";
+import { selectVotingMachineStates } from "redux/voting-machine/selectors";
 import { CheckingVote } from "./stage/CheckingVote";
 
 export const Footer = (): JSX.Element => {
-  const { isCheckingVote } = useSelector(
-    (state: RootState) => state.votingMachine
-  );
+  const { isCheckingVote } = useSelector(selectVotingMachineStates);
 
   return (
     <div className="border-t-2 border-t-black mt-[8px] leading-[16px] pt-[4px]">
