@@ -2,230 +2,320 @@
   {
     "nome": "Natação",
     "numero": "911",
-    "partido": "PEsp",
     "sexo": "F",
     "foto": "911_natacao",
+    "partido": {
+      "nome": "PEsp",
+      "numero": "91"
+    },
     "suplentes": [
       {
         "nome": "Esgrima",
         "numero": "911a",
-        "partido": "PEsp",
         "sexo": "F",
-        "foto": "911_esgrima"
+        "foto": "911_esgrima",
+        "partido": {
+          "nome": "PEsp",
+          "numero": "91"
+        }
       },
       {
         "nome": "Rúgbi",
         "numero": "911b",
-        "partido": "PEsp",
         "sexo": "M",
-        "foto": "911_rugbi"
+        "foto": "911_rugbi",
+        "partido": {
+          "nome": "PEsp",
+          "numero": "91"
+        }
       }
     ]
   },
   {
     "nome": "Golfe",
     "numero": "912",
-    "partido": "PEsp",
     "sexo": "M",
     "foto": "912_golfe",
+    "partido": {
+      "nome": "PEsp",
+      "numero": "91"
+    },
     "suplentes": [
       {
         "nome": "Polo Aquático",
         "numero": "912a",
-        "partido": "PEsp",
         "sexo": "M",
-        "foto": "912_polo_aquatico"
+        "foto": "912_polo_aquatico",
+        "partido": {
+          "nome": "PEsp",
+          "numero": "91"
+        }
       },
       {
         "nome": "Beisebol",
         "numero": "912b",
-        "partido": "PEsp",
         "sexo": "M",
-        "foto": "912_beisebol"
+        "foto": "912_beisebol",
+        "partido": {
+          "nome": "PEsp",
+          "numero": "91"
+        }
       }
     ]
   },
   {
     "nome": "Samba",
     "numero": "921",
-    "partido": "PMus",
     "sexo": "M",
     "foto": "921_samba",
+    "partido": {
+      "nome": "PMus",
+      "numero": "92"
+    },
     "suplentes": [
       {
         "nome": "Tango",
         "numero": "921a",
-        "partido": "PMus",
         "sexo": "M",
-        "foto": "921_tango"
+        "foto": "921_tango",
+        "partido": {
+          "nome": "PMus",
+          "numero": "92"
+        }
       },
       {
         "nome": "Música Disco",
         "numero": "921b",
-        "partido": "PMus",
         "sexo": "F",
-        "foto": "921_musica_disco"
+        "foto": "921_musica_disco",
+        "partido": {
+          "nome": "PMus",
+          "numero": "92"
+        }
       }
     ]
   },
   {
     "nome": "Mariachi",
     "numero": "922",
-    "partido": "PMus",
     "sexo": "M",
     "foto": "922_mariachi",
+    "partido": {
+      "nome": "PMus",
+      "numero": "92"
+    },
     "suplentes": [
       {
         "nome": "Salsa",
         "numero": "922a",
-        "partido": "PMus",
         "sexo": "F",
-        "foto": "922_salsa"
+        "foto": "922_salsa",
+        "partido": {
+          "nome": "PMus",
+          "numero": "92"
+        }
       },
       {
         "nome": "Heavy Metal",
         "numero": "922b",
-        "partido": "PMus",
         "sexo": "M",
-        "foto": "922_heavy_metal"
+        "foto": "922_heavy_metal",
+        "partido": {
+          "nome": "PMus",
+          "numero": "92"
+        }
       }
     ]
   },
   {
     "nome": "Enfermeira",
     "numero": "931",
-    "partido": "PProf",
     "sexo": "F",
     "foto": "931_enfermeira",
+    "partido": {
+      "nome": "PProf",
+      "numero": "93"
+    },
     "suplentes": [
       {
         "nome": "Aeromoça",
         "numero": "931a",
-        "partido": "PProf",
         "sexo": "F",
-        "foto": "931_aeromoca"
+        "foto": "931_aeromoca",
+        "partido": {
+          "nome": "PProf",
+          "numero": "93"
+        }
       },
       {
         "nome": "Detetive",
         "numero": "931b",
-        "partido": "PProf",
         "sexo": "M",
-        "foto": "931_detetive"
+        "foto": "931_detetive",
+        "partido": {
+          "nome": "PProf",
+          "numero": "93"
+        }
       }
     ]
   },
   {
     "nome": "Fotógrafo",
     "numero": "932",
-    "partido": "PProf",
     "sexo": "M",
     "foto": "932_fotografo",
+    "partido": {
+      "nome": "PProf",
+      "numero": "93"
+    },
     "suplentes": [
       {
         "nome": "Gari",
         "numero": "932a",
-        "partido": "PProf",
         "sexo": "M",
-        "foto": "932_gari"
+        "foto": "932_gari",
+        "partido": {
+          "nome": "PProf",
+          "numero": "93"
+        }
       },
       {
         "nome": "Pintor",
         "numero": "932b",
-        "partido": "PProf",
         "sexo": "M",
-        "foto": "932_pintor"
+        "foto": "932_pintor",
+        "partido": {
+          "nome": "PProf",
+          "numero": "93"
+        }
       }
     ]
   },
   {
     "nome": "Festa Junina",
     "numero": "941",
-    "partido": "PFest",
     "sexo": "F",
     "foto": "941_festa_junina",
+    "partido": {
+      "nome": "PFest",
+      "numero": "94"
+    },
     "suplentes": [
       {
         "nome": "Lavagem do Bonfim",
         "numero": "941a",
-        "partido": "PFest",
         "sexo": "F",
-        "foto": "941_lavagem_do_bonfim"
+        "foto": "941_lavagem_do_bonfim",
+        "partido": {
+          "nome": "PFest",
+          "numero": "94"
+        }
       },
       {
         "nome": "Dia das Bruxas",
         "numero": "941b",
-        "partido": "PFest",
         "sexo": "M",
-        "foto": "941_dia_das_bruxas"
+        "foto": "941_dia_das_bruxas",
+        "partido": {
+          "nome": "PFest",
+          "numero": "94"
+        }
       }
     ]
   },
   {
     "nome": "Cavalhadas",
     "numero": "942",
-    "partido": "PFest",
     "sexo": "F",
     "foto": "942_cavalhadas",
+    "partido": {
+      "nome": "PFest",
+      "numero": "94"
+    },
     "suplentes": [
       {
         "nome": "Festa do Milho",
         "numero": "942a",
-        "partido": "PFest",
         "sexo": "F",
-        "foto": "942_festa_do_milho"
+        "foto": "942_festa_do_milho",
+        "partido": {
+          "nome": "PFest",
+          "numero": "94"
+        }
       },
       {
         "nome": "Folia de Reis",
         "numero": "942b",
-        "partido": "PFest",
         "sexo": "F",
-        "foto": "942_folia_de_reis"
+        "foto": "942_folia_de_reis",
+        "partido": {
+          "nome": "PFest",
+          "numero": "94"
+        }
       }
     ]
   },
   {
     "nome": "Saci-Pererê",
     "numero": "951",
-    "partido": "PFolc",
     "sexo": "M",
     "foto": "951_saci",
+    "partido": {
+      "nome": "PFolc",
+      "numero": "95"
+    },
     "suplentes": [
       {
         "nome": "Caipora",
         "numero": "951a",
-        "partido": "PFolc",
         "sexo": "F",
-        "foto": "951_caipora"
+        "foto": "951_caipora",
+        "partido": {
+          "nome": "PFolc",
+          "numero": "95"
+        }
       },
       {
         "nome": "Mãe do Ouro",
         "numero": "951b",
-        "partido": "PFolc",
         "sexo": "F",
-        "foto": "951_mae_douro"
+        "foto": "951_mae_douro",
+        "partido": {
+          "nome": "PFolc",
+          "numero": "95"
+        }
       }
     ]
   },
   {
     "nome": "Cabra-Cabriola",
     "numero": "952",
-    "partido": "PFolc",
     "sexo": "F",
     "foto": "952_cabra-cabriola",
+    "partido": {
+      "nome": "PFolc",
+      "numero": "95"
+    },
     "suplentes": [
       {
         "nome": "Pisadeira",
         "numero": "952a",
-        "partido": "PFolc",
         "sexo": "F",
-        "foto": "952_pisadeira"
+        "foto": "952_pisadeira",
+        "partido": {
+          "nome": "PFolc",
+          "numero": "95"
+        }
       },
       {
         "nome": "Matintapereira",
         "numero": "952b",
-        "partido": "PFolc",
         "sexo": "F",
-        "foto": "952_matinta_pereira"
+        "foto": "952_matinta_pereira",
+        "partido": {
+          "nome": "PFolc",
+          "numero": "95"
+        }
       }
     ]
   }

@@ -2,71 +2,101 @@
   {
     "nome": "Vôlei",
     "numero": "91",
-    "partido": "PEsp",
     "sexo": "M",
     "foto": "91_volei",
+    "partido": {
+      "nome": "PEsp",
+      "numero": "91"
+    },
     "vice": {
       "nome": "Tênis",
       "numero": "91a",
-      "partido": "PEsp",
       "sexo": "M",
-      "foto": "91_tenis"
+      "foto": "91_tenis",
+      "partido": {
+        "nome": "PEsp",
+        "numero": "91"
+      }
     }
   },
   {
     "nome": "Forró",
     "numero": "92",
-    "partido": "PMus",
     "sexo": "M",
     "foto": "92_forro",
+    "partido": {
+      "nome": "PMus",
+      "numero": "92"
+    },
     "vice": {
       "nome": "Pagode",
       "numero": "92a",
-      "partido": "PMus",
       "sexo": "M",
-      "foto": "92_pagode"
+      "foto": "92_pagode",
+      "partido": {
+        "nome": "PMus",
+        "numero": "92"
+      }
     }
   },
   {
     "nome": "Médica",
     "numero": "93",
-    "partido": "PProf",
     "sexo": "F",
     "foto": "93_medica",
+    "partido": {
+      "nome": "PProf",
+      "numero": "93"
+    },
     "vice": {
       "nome": "Bibliotecária",
       "numero": "93a",
-      "partido": "PProf",
       "sexo": "F",
-      "foto": "93_bibliotecaria"
+      "foto": "93_bibliotecaria",
+      "partido": {
+        "nome": "PProf",
+        "numero": "93"
+      }
     }
   },
   {
     "nome": "Dia da Independência do Brasil",
     "numero": "94",
-    "partido": "PFest",
     "sexo": "M",
     "foto": "94_independencia_do_brasil",
+    "partido": {
+      "nome": "PFest",
+      "numero": "94"
+    },
     "vice": {
       "nome": "Natal",
       "numero": "94a",
-      "partido": "PFest",
       "sexo": "M",
-      "foto": "94_natal"
+      "foto": "94_natal",
+      "partido": {
+        "nome": "PFest",
+        "numero": "94"
+      }
     }
   },
   {
     "nome": "Boto Cor-de-Rosa",
     "numero": "95",
-    "partido": "PFolc",
     "sexo": "M",
     "foto": "95_boto",
+    "partido": {
+      "nome": "PFolc",
+      "numero": "95"
+    },
     "vice": {
       "nome": "Boitatá",
       "numero": "95a",
-      "partido": "PFolc",
       "sexo": "M",
-      "foto": "95_boitata"
+      "foto": "95_boitata",
+      "partido": {
+        "nome": "PFolc",
+        "numero": "95"
+      }
     }
   }
 ]

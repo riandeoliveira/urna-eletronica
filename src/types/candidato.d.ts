@@ -1,7 +1,12 @@
+interface Partido {
+  nome: string;
+  numero: string;
+}
+
 interface CandidatoBase {
   nome: string;
   numero: string;
-  partido: string;
+  partido: Partido;
   sexo: "M" | "F";
   foto: string;
 }

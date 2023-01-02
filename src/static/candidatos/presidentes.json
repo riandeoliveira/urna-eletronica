@@ -2,71 +2,101 @@
   {
     "nome": "Futebol",
     "numero": "91",
-    "partido": "PEsp",
     "sexo": "M",
     "foto": "91_futebol",
+    "partido": {
+      "nome": "PEsp",
+      "numero": "91"
+    },
     "vice": {
       "nome": "Judô",
       "numero": "91a",
-      "partido": "PEsp",
       "sexo": "M",
-      "foto": "91_judo"
+      "foto": "91_judo",
+      "partido": {
+        "nome": "PEsp",
+        "numero": "91"
+      }
     }
   },
   {
     "nome": "Rock",
     "numero": "92",
-    "partido": "PMus",
     "sexo": "M",
     "foto": "92_rock",
+    "partido": {
+      "nome": "PMus",
+      "numero": "92"
+    },
     "vice": {
       "nome": "Música Popular Brasileira",
       "numero": "92a",
-      "partido": "PMus",
       "sexo": "F",
-      "foto": "92_musica_popular_brasileira"
+      "foto": "92_musica_popular_brasileira",
+      "partido": {
+        "nome": "PMus",
+        "numero": "92"
+      }
     }
   },
   {
     "nome": "Professora",
     "numero": "93",
-    "partido": "PProf",
     "sexo": "F",
     "foto": "93_professora",
+    "partido": {
+      "nome": "PProf",
+      "numero": "93"
+    },
     "vice": {
       "nome": "Mágico",
       "numero": "93a",
-      "partido": "PProf",
       "sexo": "M",
-      "foto": "93_magico"
+      "foto": "93_magico",
+      "partido": {
+        "nome": "PProf",
+        "numero": "93"
+      }
     }
   },
   {
     "nome": "Copa do Mundo",
     "numero": "94",
-    "partido": "PFest",
     "sexo": "M",
     "foto": "94_copa_do_mundo",
+    "partido": {
+      "nome": "PFest",
+      "numero": "94"
+    },
     "vice": {
       "nome": "Carnaval",
       "numero": "94a",
-      "partido": "PFest",
       "sexo": "M",
-      "foto": "94_carnaval"
+      "foto": "94_carnaval",
+      "partido": {
+        "nome": "PFest",
+        "numero": "94"
+      }
     }
   },
   {
     "nome": "Vitória-Régia",
     "numero": "95",
-    "partido": "PFolc",
     "sexo": "F",
     "foto": "95_vitoria_regia",
+    "partido": {
+      "nome": "PFolc",
+      "numero": "95"
+    },
     "vice": {
       "nome": "Curupira",
       "numero": "95a",
-      "partido": "PFolc",
       "sexo": "M",
-      "foto": "95_curupira"
+      "foto": "95_curupira",
+      "partido": {
+        "nome": "PFolc",
+        "numero": "95"
+      }
     }
   }
 ]
