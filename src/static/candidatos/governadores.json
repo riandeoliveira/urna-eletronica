@@ -3,6 +3,7 @@
     "nome": "Vôlei",
     "numero": "91",
     "sexo": "M",
+    "cargo": "governador",
     "foto": "91_volei",
     "partido": {
       "nome": "PEsp",
@@ -12,6 +13,7 @@
       "nome": "Tênis",
       "numero": "91a",
       "sexo": "M",
+      "cargo": "vice_governador",
       "foto": "91_tenis",
       "partido": {
         "nome": "PEsp",
@@ -23,6 +25,7 @@
     "nome": "Forró",
     "numero": "92",
     "sexo": "M",
+    "cargo": "governador",
     "foto": "92_forro",
     "partido": {
       "nome": "PMus",
@@ -32,6 +35,7 @@
       "nome": "Pagode",
       "numero": "92a",
       "sexo": "M",
+      "cargo": "vice_governador",
       "foto": "92_pagode",
       "partido": {
         "nome": "PMus",
@@ -43,6 +47,7 @@
     "nome": "Médica",
     "numero": "93",
     "sexo": "F",
+    "cargo": "governador",
     "foto": "93_medica",
     "partido": {
       "nome": "PProf",
@@ -52,6 +57,7 @@
       "nome": "Bibliotecária",
       "numero": "93a",
       "sexo": "F",
+      "cargo": "vice_governador",
       "foto": "93_bibliotecaria",
       "partido": {
         "nome": "PProf",
@@ -63,6 +69,7 @@
     "nome": "Dia da Independência do Brasil",
     "numero": "94",
     "sexo": "M",
+    "cargo": "governador",
     "foto": "94_independencia_do_brasil",
     "partido": {
       "nome": "PFest",
@@ -72,6 +79,7 @@
       "nome": "Natal",
       "numero": "94a",
       "sexo": "M",
+      "cargo": "vice_governador",
       "foto": "94_natal",
       "partido": {
         "nome": "PFest",
@@ -83,6 +91,7 @@
     "nome": "Boto Cor-de-Rosa",
     "numero": "95",
     "sexo": "M",
+    "cargo": "governador",
     "foto": "95_boto",
     "partido": {
       "nome": "PFolc",
@@ -92,6 +101,7 @@
       "nome": "Boitatá",
       "numero": "95a",
       "sexo": "M",
+      "cargo": "vice_governador",
       "foto": "95_boitata",
       "partido": {
         "nome": "PFolc",

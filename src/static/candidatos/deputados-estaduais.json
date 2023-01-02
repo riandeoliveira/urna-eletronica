@@ -3,6 +3,7 @@
     "nome": "Basquete",
     "numero": "91001",
     "sexo": "M",
+    "cargo": "deputado_estadual",
     "foto": "91001_basquete",
     "partido": {
       "nome": "PEsp",
@@ -13,6 +14,7 @@
     "nome": "Hipismo",
     "numero": "91002",
     "sexo": "M",
+    "cargo": "deputado_estadual",
     "foto": "91002_hipismo",
     "partido": {
       "nome": "PEsp",
@@ -23,6 +25,7 @@
     "nome": "Patinação",
     "numero": "91003",
     "sexo": "F",
+    "cargo": "deputado_estadual",
     "foto": "91003_patinacao",
     "partido": {
       "nome": "PEsp",
@@ -33,6 +36,7 @@
     "nome": "Frevo",
     "numero": "92001",
     "sexo": "M",
+    "cargo": "deputado_estadual",
     "foto": "92001_frevo",
     "partido": {
       "nome": "PMus",
@@ -43,6 +47,7 @@
     "nome": "Jazz",
     "numero": "92002",
     "sexo": "M",
+    "cargo": "deputado_estadual",
     "foto": "92002_jazz",
     "partido": {
       "nome": "PMus",
@@ -53,6 +58,7 @@
     "nome": "Música Eletrônica",
     "numero": "92003",
     "sexo": "F",
+    "cargo": "deputado_estadual",
     "foto": "92003_musica_eletronica",
     "partido": {
       "nome": "PMus",
@@ -63,6 +69,7 @@
     "nome": "Garçom",
     "numero": "93001",
     "sexo": "M",
+    "cargo": "deputado_estadual",
     "foto": "93001_garcom",
     "partido": {
       "nome": "PProf",
@@ -73,6 +80,7 @@
     "nome": "Motorista",
     "numero": "93002",
     "sexo": "M",
+    "cargo": "deputado_estadual",
     "foto": "93002_motorista",
     "partido": {
       "nome": "PProf",
@@ -83,6 +91,7 @@
     "nome": "Bombeira",
     "numero": "93003",
     "sexo": "F",
+    "cargo": "deputado_estadual",
     "foto": "93003_bombeira",
     "partido": {
       "nome": "PProf",
@@ -93,6 +102,7 @@
     "nome": "Páscoa",
     "numero": "94001",
     "sexo": "F",
+    "cargo": "deputado_estadual",
     "foto": "94001_pascoa",
     "partido": {
       "nome": "PFest",
@@ -103,6 +113,7 @@
     "nome": "Réveillon",
     "numero": "94002",
     "sexo": "M",
+    "cargo": "deputado_estadual",
     "foto": "94002_reveillon",
     "partido": {
       "nome": "PFest",
@@ -113,6 +124,7 @@
     "nome": "Festa da Uva",
     "numero": "94003",
     "sexo": "F",
+    "cargo": "deputado_estadual",
     "foto": "94003_festa_da_uva",
     "partido": {
       "nome": "PFest",
@@ -123,6 +135,7 @@
     "nome": "Iara",
     "numero": "95001",
     "sexo": "F",
+    "cargo": "deputado_estadual",
     "foto": "95001_iara",
     "partido": {
       "nome": "PFolc",
@@ -133,6 +146,7 @@
     "nome": "Barba-Ruiva",
     "numero": "95002",
     "sexo": "M",
+    "cargo": "deputado_estadual",
     "foto": "95002_barba_ruiva",
     "partido": {
       "nome": "PFolc",
@@ -143,6 +157,7 @@
     "nome": "Bicho-Papão",
     "numero": "95003",
     "sexo": "M",
+    "cargo": "deputado_estadual",
     "foto": "95003_bicho_papao",
     "partido": {
       "nome": "PFolc",

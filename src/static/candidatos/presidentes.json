@@ -3,6 +3,7 @@
     "nome": "Futebol",
     "numero": "91",
     "sexo": "M",
+    "cargo": "presidente",
     "foto": "91_futebol",
     "partido": {
       "nome": "PEsp",
@@ -12,6 +13,7 @@
       "nome": "Judô",
       "numero": "91a",
       "sexo": "M",
+      "cargo": "vice_presidente",
       "foto": "91_judo",
       "partido": {
         "nome": "PEsp",
@@ -23,6 +25,7 @@
     "nome": "Rock",
     "numero": "92",
     "sexo": "M",
+    "cargo": "presidente",
     "foto": "92_rock",
     "partido": {
       "nome": "PMus",
@@ -32,6 +35,7 @@
       "nome": "Música Popular Brasileira",
       "numero": "92a",
       "sexo": "F",
+      "cargo": "vice_presidente",
       "foto": "92_musica_popular_brasileira",
       "partido": {
         "nome": "PMus",
@@ -43,6 +47,7 @@
     "nome": "Professora",
     "numero": "93",
     "sexo": "F",
+    "cargo": "presidente",
     "foto": "93_professora",
     "partido": {
       "nome": "PProf",
@@ -52,6 +57,7 @@
       "nome": "Mágico",
       "numero": "93a",
       "sexo": "M",
+      "cargo": "vice_presidente",
       "foto": "93_magico",
       "partido": {
         "nome": "PProf",
@@ -63,6 +69,7 @@
     "nome": "Copa do Mundo",
     "numero": "94",
     "sexo": "M",
+    "cargo": "presidente",
     "foto": "94_copa_do_mundo",
     "partido": {
       "nome": "PFest",
@@ -72,6 +79,7 @@
       "nome": "Carnaval",
       "numero": "94a",
       "sexo": "M",
+      "cargo": "vice_presidente",
       "foto": "94_carnaval",
       "partido": {
         "nome": "PFest",
@@ -83,6 +91,7 @@
     "nome": "Vitória-Régia",
     "numero": "95",
     "sexo": "F",
+    "cargo": "presidente",
     "foto": "95_vitoria_regia",
     "partido": {
       "nome": "PFolc",
@@ -92,6 +101,7 @@
       "nome": "Curupira",
       "numero": "95a",
       "sexo": "M",
+      "cargo": "vice_presidente",
       "foto": "95_curupira",
       "partido": {
         "nome": "PFolc",

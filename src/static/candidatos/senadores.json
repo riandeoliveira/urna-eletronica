@@ -3,6 +3,7 @@
     "nome": "Natação",
     "numero": "911",
     "sexo": "F",
+    "cargo": "senador",
     "foto": "911_natacao",
     "partido": {
       "nome": "PEsp",
@@ -13,6 +14,7 @@
         "nome": "Esgrima",
         "numero": "911a",
         "sexo": "F",
+        "cargo": "suplente",
         "foto": "911_esgrima",
         "partido": {
           "nome": "PEsp",
@@ -23,6 +25,7 @@
         "nome": "Rúgbi",
         "numero": "911b",
         "sexo": "M",
+        "cargo": "suplente",
         "foto": "911_rugbi",
         "partido": {
           "nome": "PEsp",
@@ -35,6 +38,7 @@
     "nome": "Golfe",
     "numero": "912",
     "sexo": "M",
+    "cargo": "senador",
     "foto": "912_golfe",
     "partido": {
       "nome": "PEsp",
@@ -45,6 +49,7 @@
         "nome": "Polo Aquático",
         "numero": "912a",
         "sexo": "M",
+        "cargo": "suplente",
         "foto": "912_polo_aquatico",
         "partido": {
           "nome": "PEsp",
@@ -55,6 +60,7 @@
         "nome": "Beisebol",
         "numero": "912b",
         "sexo": "M",
+        "cargo": "suplente",
         "foto": "912_beisebol",
         "partido": {
           "nome": "PEsp",
@@ -67,6 +73,7 @@
     "nome": "Samba",
     "numero": "921",
     "sexo": "M",
+    "cargo": "senador",
     "foto": "921_samba",
     "partido": {
       "nome": "PMus",
@@ -77,6 +84,7 @@
         "nome": "Tango",
         "numero": "921a",
         "sexo": "M",
+        "cargo": "suplente",
         "foto": "921_tango",
         "partido": {
           "nome": "PMus",
@@ -87,6 +95,7 @@
         "nome": "Música Disco",
         "numero": "921b",
         "sexo": "F",
+        "cargo": "suplente",
         "foto": "921_musica_disco",
         "partido": {
           "nome": "PMus",
@@ -99,6 +108,7 @@
     "nome": "Mariachi",
     "numero": "922",
     "sexo": "M",
+    "cargo": "senador",
     "foto": "922_mariachi",
     "partido": {
       "nome": "PMus",
@@ -109,6 +119,7 @@
         "nome": "Salsa",
         "numero": "922a",
         "sexo": "F",
+        "cargo": "suplente",
         "foto": "922_salsa",
         "partido": {
           "nome": "PMus",
@@ -119,6 +130,7 @@
         "nome": "Heavy Metal",
         "numero": "922b",
         "sexo": "M",
+        "cargo": "suplente",
         "foto": "922_heavy_metal",
         "partido": {
           "nome": "PMus",
@@ -131,6 +143,7 @@
     "nome": "Enfermeira",
     "numero": "931",
     "sexo": "F",
+    "cargo": "senador",
     "foto": "931_enfermeira",
     "partido": {
       "nome": "PProf",
@@ -141,6 +154,7 @@
         "nome": "Aeromoça",
         "numero": "931a",
         "sexo": "F",
+        "cargo": "suplente",
         "foto": "931_aeromoca",
         "partido": {
           "nome": "PProf",
@@ -151,6 +165,7 @@
         "nome": "Detetive",
         "numero": "931b",
         "sexo": "M",
+        "cargo": "suplente",
         "foto": "931_detetive",
         "partido": {
           "nome": "PProf",
@@ -163,6 +178,7 @@
     "nome": "Fotógrafo",
     "numero": "932",
     "sexo": "M",
+    "cargo": "senador",
     "foto": "932_fotografo",
     "partido": {
       "nome": "PProf",
@@ -173,6 +189,7 @@
         "nome": "Gari",
         "numero": "932a",
         "sexo": "M",
+        "cargo": "suplente",
         "foto": "932_gari",
         "partido": {
           "nome": "PProf",
@@ -183,6 +200,7 @@
         "nome": "Pintor",
         "numero": "932b",
         "sexo": "M",
+        "cargo": "suplente",
         "foto": "932_pintor",
         "partido": {
           "nome": "PProf",
@@ -195,6 +213,7 @@
     "nome": "Festa Junina",
     "numero": "941",
     "sexo": "F",
+    "cargo": "senador",
     "foto": "941_festa_junina",
     "partido": {
       "nome": "PFest",
@@ -205,6 +224,7 @@
         "nome": "Lavagem do Bonfim",
         "numero": "941a",
         "sexo": "F",
+        "cargo": "suplente",
         "foto": "941_lavagem_do_bonfim",
         "partido": {
           "nome": "PFest",
@@ -215,6 +235,7 @@
         "nome": "Dia das Bruxas",
         "numero": "941b",
         "sexo": "M",
+        "cargo": "suplente",
         "foto": "941_dia_das_bruxas",
         "partido": {
           "nome": "PFest",
@@ -227,6 +248,7 @@
     "nome": "Cavalhadas",
     "numero": "942",
     "sexo": "F",
+    "cargo": "senador",
     "foto": "942_cavalhadas",
     "partido": {
       "nome": "PFest",
@@ -237,6 +259,7 @@
         "nome": "Festa do Milho",
         "numero": "942a",
         "sexo": "F",
+        "cargo": "suplente",
         "foto": "942_festa_do_milho",
         "partido": {
           "nome": "PFest",
@@ -247,6 +270,7 @@
         "nome": "Folia de Reis",
         "numero": "942b",
         "sexo": "F",
+        "cargo": "suplente",
         "foto": "942_folia_de_reis",
         "partido": {
           "nome": "PFest",
@@ -259,6 +283,7 @@
     "nome": "Saci-Pererê",
     "numero": "951",
     "sexo": "M",
+    "cargo": "senador",
     "foto": "951_saci",
     "partido": {
       "nome": "PFolc",
@@ -269,6 +294,7 @@
         "nome": "Caipora",
         "numero": "951a",
         "sexo": "F",
+        "cargo": "suplente",
         "foto": "951_caipora",
         "partido": {
           "nome": "PFolc",
@@ -279,6 +305,7 @@
         "nome": "Mãe do Ouro",
         "numero": "951b",
         "sexo": "F",
+        "cargo": "suplente",
         "foto": "951_mae_douro",
         "partido": {
           "nome": "PFolc",
@@ -291,6 +318,7 @@
     "nome": "Cabra-Cabriola",
     "numero": "952",
     "sexo": "F",
+    "cargo": "senador",
     "foto": "952_cabra-cabriola",
     "partido": {
       "nome": "PFolc",
@@ -301,6 +329,7 @@
         "nome": "Pisadeira",
         "numero": "952a",
         "sexo": "F",
+        "cargo": "suplente",
         "foto": "952_pisadeira",
         "partido": {
           "nome": "PFolc",
@@ -311,6 +340,7 @@
         "nome": "Matintapereira",
         "numero": "952b",
         "sexo": "F",
+        "cargo": "suplente",
         "foto": "952_matinta_pereira",
         "partido": {
           "nome": "PFolc",

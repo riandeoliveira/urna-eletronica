@@ -3,6 +3,7 @@
     "nome": "Atletismo",
     "numero": "9101",
     "sexo": "M",
+    "cargo": "deputado_federal",
     "foto": "9101_atletismo",
     "partido": {
       "nome": "PEsp",
@@ -13,6 +14,7 @@
     "nome": "Ginástica Artística",
     "numero": "9102",
     "sexo": "F",
+    "cargo": "deputado_federal",
     "foto": "9102_ginastica",
     "partido": {
       "nome": "PEsp",
@@ -23,6 +25,7 @@
     "nome": "Boxe",
     "numero": "9103",
     "sexo": "M",
+    "cargo": "deputado_federal",
     "foto": "9103_boxe",
     "partido": {
       "nome": "PEsp",
@@ -33,6 +36,7 @@
     "nome": "Halterofilismo",
     "numero": "9104",
     "sexo": "M",
+    "cargo": "deputado_federal",
     "foto": "9104_halterofilismo",
     "partido": {
       "nome": "PEsp",
@@ -43,6 +47,7 @@
     "nome": "Sertanejo",
     "numero": "9201",
     "sexo": "M",
+    "cargo": "deputado_federal",
     "foto": "9201_sertanejo",
     "partido": {
       "nome": "PMus",
@@ -53,6 +58,7 @@
     "nome": "Reggae",
     "numero": "9202",
     "sexo": "M",
+    "cargo": "deputado_federal",
     "foto": "9202_reggae",
     "partido": {
       "nome": "PMus",
@@ -63,6 +69,7 @@
     "nome": "Música Clássica",
     "numero": "9203",
     "sexo": "F",
+    "cargo": "deputado_federal",
     "foto": "9203_musica_classica",
     "partido": {
       "nome": "PMus",
@@ -73,6 +80,7 @@
     "nome": "Ópera",
     "numero": "9204",
     "sexo": "F",
+    "cargo": "deputado_federal",
     "foto": "9204_opera",
     "partido": {
       "nome": "PMus",
@@ -83,6 +91,7 @@
     "nome": "Artista",
     "numero": "9301",
     "sexo": "M",
+    "cargo": "deputado_federal",
     "foto": "9301_artista",
     "partido": {
       "nome": "PProf",
@@ -93,6 +102,7 @@
     "nome": "Operário",
     "numero": "9302",
     "sexo": "M",
+    "cargo": "deputado_federal",
     "foto": "9302_operario",
     "partido": {
       "nome": "PProf",
@@ -103,6 +113,7 @@
     "nome": "Astronauta",
     "numero": "9303",
     "sexo": "M",
+    "cargo": "deputado_federal",
     "foto": "9303_astronauta",
     "partido": {
       "nome": "PProf",
@@ -113,6 +124,7 @@
     "nome": "Cozinheira",
     "numero": "9304",
     "sexo": "F",
+    "cargo": "deputado_federal",
     "foto": "9304_cozinheira",
     "partido": {
       "nome": "PProf",
@@ -123,6 +135,7 @@
     "nome": "Boi-bumbá",
     "numero": "9401",
     "sexo": "M",
+    "cargo": "deputado_federal",
     "foto": "9401_boi_bumba",
     "partido": {
       "nome": "PFest",
@@ -133,6 +146,7 @@
     "nome": "Peão de Boiadeiro",
     "numero": "9402",
     "sexo": "M",
+    "cargo": "deputado_federal",
     "foto": "9402_peao_de_boiadeiro",
     "partido": {
       "nome": "PFest",
@@ -143,6 +157,7 @@
     "nome": "Oktoberfest",
     "numero": "9403",
     "sexo": "F",
+    "cargo": "deputado_federal",
     "foto": "9403_oktoberfest",
     "partido": {
       "nome": "PFest",
@@ -153,6 +168,7 @@
     "nome": "Semana Farroupilha",
     "numero": "9404",
     "sexo": "F",
+    "cargo": "deputado_federal",
     "foto": "9404_semana_farroupilha",
     "partido": {
       "nome": "PFest",
@@ -163,6 +179,7 @@
     "nome": "Lobisomem",
     "numero": "9501",
     "sexo": "M",
+    "cargo": "deputado_federal",
     "foto": "9501_lobisomem",
     "partido": {
       "nome": "PFolc",
@@ -173,6 +190,7 @@
     "nome": "Cuca",
     "numero": "9502",
     "sexo": "F",
+    "cargo": "deputado_federal",
     "foto": "9502_cuca",
     "partido": {
       "nome": "PFolc",
@@ -183,6 +201,7 @@
     "nome": "Negrinho do Pastoreio",
     "numero": "9503",
     "sexo": "M",
+    "cargo": "deputado_federal",
     "foto": "9503_negrinho_do_pastoreio",
     "partido": {
       "nome": "PFolc",
@@ -193,6 +212,7 @@
     "nome": "Mapinguari",
     "numero": "9504",
     "sexo": "M",
+    "cargo": "deputado_federal",
     "foto": "9504_mapinguari",
     "partido": {
       "nome": "PFolc",

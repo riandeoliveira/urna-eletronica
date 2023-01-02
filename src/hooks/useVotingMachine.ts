@@ -20,9 +20,16 @@ export const useVotingMachine = (): UseVotingMachine => {
   const [playKeyPressSound] = useSound<string>(
     "/assets/audios/key-press-sound.mp3"
   );
-  const { isBlankVote, keyInput, stage } = useSelector(
+  const [playConfirmVoteSound] = useSound<string>(
+    "/assets/audios/confirm-vote-sound.mp3"
+  );
+  const { isBlankVote, keyInput, stage, isCheckingVote } = useSelector(
     (state: RootState) => state.votingMachine
   );
+
+  const findCandidateByNumber = (): void => {
+    
+  };
 
   const handleVoteChecking = (): void => {
     const MILLISECONDS: number = 1000;
@@ -59,6 +66,10 @@ export const useVotingMachine = (): UseVotingMachine => {
 
   const onConfirmButtonPress = (): void => {
     playKeyPressSound();
+
+    if (isBlankVote && !isCheckingVote) {
+      playConfirmVoteSound();
+    }
   };
 
   return {
