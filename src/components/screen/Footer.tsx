@@ -3,7 +3,9 @@ import { selectVotingMachineStates } from "redux/voting-machine/selectors";
 import { CheckingVote } from "./stage/CheckingVote";
 
 export const Footer = (): JSX.Element => {
-  const { isCheckingVote } = useSelector(selectVotingMachineStates);
+  const { isCheckingVote, isPartyVote } = useSelector(
+    selectVotingMachineStates
+  );
 
   return (
     <div className="border-t-2 border-t-black mt-[8px] leading-[16px] pt-[4px]">
@@ -17,6 +19,11 @@ export const Footer = (): JSX.Element => {
             <span className="pl-[6px]">Aperte a tecla:</span>
             <span className="pl-[22px]">CONFIRMA para CONFIRMAR este voto</span>
             <span className="pl-[32px]">CORRIGE para REINICIAR este voto</span>
+            {isPartyVote && (
+              <span className="text-[13px] absolute top-[42%] right-[10px] animate-fast-pulse">
+                (voto de legenda)
+              </span>
+            )}
           </>
         )}
       </div>

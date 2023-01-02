@@ -8,6 +8,7 @@ interface VotingMachineState {
   currentCandidate: Candidato;
   isBlankVote: boolean;
   isCheckingVote: boolean;
+  isPartyVote: boolean;
   keyInput: string[];
   stage: Etapa;
   stageIndex: number;
@@ -17,6 +18,7 @@ const initialState: VotingMachineState = {
   currentCandidate: {} as Candidato,
   isBlankVote: false,
   isCheckingVote: false,
+  isPartyVote: false,
   keyInput: [],
   stage: etapas[0],
   stageIndex: 0,

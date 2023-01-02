@@ -19,6 +19,13 @@ export const setIsCheckingVote = (
   payload,
 });
 
+export const setIsPartyVote = (
+  payload: boolean
+): PayloadAction<typeof payload> => ({
+  type: VotingMachineActionTypes.SET_IS_PARTY_VOTE,
+  payload,
+});
+
 export const setStage = (): PayloadAction<null> => ({
   type: VotingMachineActionTypes.SET_STAGE,
 });
