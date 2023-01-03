@@ -5,10 +5,15 @@ import {
   setIsCheckingVote,
   setKeyInput,
 } from "redux/voting-machine/actions";
-import { selectVotingMachineStates } from "redux/voting-machine/selectors";
+import {
+  selectCandidateByNumber,
+  selectCandidateParty,
+  selectVotingMachineStates,
+} from "redux/voting-machine/selectors";
 import useSound from "use-sound";
 
 interface UseVotingMachine {
+  handleVoting: () => void;
   onBlankButtonPress: () => void;
   onConfirmButtonPress: () => void;
   onCorrectsButtonPress: () => void;
@@ -26,6 +31,37 @@ export const useVotingMachine = (): UseVotingMachine => {
   const { isBlankVote, keyInput, stage, isCheckingVote } = useSelector(
     selectVotingMachineStates
   );
+  const candidateFound = useSelector(selectCandidateByNumber);
+  const candidatePartyFound = useSelector(selectCandidateParty);
+
+  const handleVoting = (): void => {
+    const isAvailableToPartyVote: boolean =
+      stage.cargo.tipo === "deputado_federal" ||
+      stage.cargo.tipo === "deputado_estadual";
+
+    if (keyInput.length === 2) {
+      if (candidatePartyFound && isAvailableToPartyVote) {
+        console.log("VOTO DE LEGENDA");
+        console.log(candidatePartyFound);
+      }
+
+      if (!candidateFound && !candidatePartyFound) {
+        console.log("VOTO NULO");
+      }
+    }
+
+    if (keyInput.length === stage.campo_digitos.length) {
+      if (candidateFound) {
+        console.log("CANDIDATO ENCONTRADO");
+        console.log(candidateFound);
+      }
+
+      if (!candidateFound && candidatePartyFound && isAvailableToPartyVote) {
+        console.log("CANDIDATO INEXISTENTE");
+        console.log(candidatePartyFound);
+      }
+    }
+  };
 
   const handleVoteChecking = (): void => {
     const MILLISECONDS: number = 1000;
@@ -69,6 +105,7 @@ export const useVotingMachine = (): UseVotingMachine => {
   };
 
   return {
+    handleVoting,
     onBlankButtonPress,
     onConfirmButtonPress,
     onCorrectsButtonPress,

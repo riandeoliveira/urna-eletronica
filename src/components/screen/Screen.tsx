@@ -6,15 +6,13 @@ import { PartyVote } from "./stage/PartyVote";
 import { Stage } from "./stage/Stage";
 
 export const Screen = (): JSX.Element => {
-  const { isBlankVote, keyInput, isPartyVote } = useSelector(
+  const { isBlankVote, isNullVote, isPartyVote } = useSelector(
     selectVotingMachineStates
   );
 
   const testComponentsRendering = (): JSX.Element => {
     if (isBlankVote) return <BlankVote />;
-
-    if (keyInput.length >= 2) return <NullVote />;
-
+    if (isNullVote) return <NullVote />;
     if (isPartyVote) return <PartyVote />;
 
     return <Stage />;
