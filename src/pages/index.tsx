@@ -9,11 +9,15 @@ import UrnBox from "../../public/assets/images/urn-box.svg";
 import UrnBrand from "../../public/assets/images/urn-brand.svg";
 
 const Home: NextPage = (): JSX.Element => {
-  const { handleVoting } = useVotingMachine();
-  const { keyInput } = useSelector(selectVotingMachineStates);
+  const { handleVoting, handleVoteChecking } = useVotingMachine();
+  const { keyInput, stage } = useSelector(selectVotingMachineStates);
 
   useEffect(() => {
     handleVoting();
+
+    if (keyInput.length === stage.campo_digitos.length) {
+      handleVoteChecking();
+    }
   }, [keyInput]);
 
   return (

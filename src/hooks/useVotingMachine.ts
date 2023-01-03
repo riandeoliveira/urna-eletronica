@@ -15,6 +15,7 @@ import {
 import useSound from "use-sound";
 
 interface UseVotingMachine {
+  handleVoteChecking: () => void;
   handleVoting: () => void;
   onBlankButtonPress: () => void;
   onConfirmButtonPress: () => void;
@@ -51,19 +52,19 @@ export const useVotingMachine = (): UseVotingMachine => {
         console.log("VOTO NULO");
         dispatch(setIsNullVote(true));
       }
-    }
-
-    if (keyInput.length === stage.campo_digitos.length) {
-      if (candidateFound) {
-        console.log("CANDIDATO ENCONTRADO");
-        console.log(candidateFound);
-      }
 
       if (!candidateFound && candidatePartyFound && isAvailableToPartyVote) {
         console.log("CANDIDATO INEXISTENTE");
         console.log(candidatePartyFound);
 
         dispatch(setIsPartyVote(true));
+      }
+    }
+
+    if (keyInput.length === stage.campo_digitos.length) {
+      if (candidateFound) {
+        console.log("CANDIDATO ENCONTRADO");
+        console.log(candidateFound);
       }
     }
   };
@@ -104,14 +105,13 @@ export const useVotingMachine = (): UseVotingMachine => {
   };
 
   const onConfirmButtonPress = (): void => {
-    playKeyPressSound();
-
     if (isBlankVote && !isCheckingVote) {
       playConfirmVoteSound();
-    }
+    } else playKeyPressSound();
   };
 
   return {
+    handleVoteChecking,
     handleVoting,
     onBlankButtonPress,
     onConfirmButtonPress,
