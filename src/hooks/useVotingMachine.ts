@@ -3,6 +3,8 @@ import {
   clearKeyInput,
   setIsBlankVote,
   setIsCheckingVote,
+  setIsNullVote,
+  setIsPartyVote,
   setKeyInput,
 } from "redux/voting-machine/actions";
 import {
@@ -47,6 +49,7 @@ export const useVotingMachine = (): UseVotingMachine => {
 
       if (!candidateFound && !candidatePartyFound) {
         console.log("VOTO NULO");
+        dispatch(setIsNullVote(true));
       }
     }
 
@@ -59,6 +62,8 @@ export const useVotingMachine = (): UseVotingMachine => {
       if (!candidateFound && candidatePartyFound && isAvailableToPartyVote) {
         console.log("CANDIDATO INEXISTENTE");
         console.log(candidatePartyFound);
+
+        dispatch(setIsPartyVote(true));
       }
     }
   };
@@ -94,6 +99,8 @@ export const useVotingMachine = (): UseVotingMachine => {
 
     dispatch(clearKeyInput());
     dispatch(setIsBlankVote(false));
+    dispatch(setIsPartyVote(false));
+    dispatch(setIsNullVote(false));
   };
 
   const onConfirmButtonPress = (): void => {

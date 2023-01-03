@@ -55,6 +55,12 @@ export const votingMachineReducer = (
         isNullVote: action.payload,
       };
 
+    case VotingMachineActionTypes.SET_IS_PARTY_VOTE:
+      return {
+        ...state,
+        isPartyVote: action.payload,
+      };
+
     case VotingMachineActionTypes.SET_KEY_INPUT:
       return {
         ...state,
