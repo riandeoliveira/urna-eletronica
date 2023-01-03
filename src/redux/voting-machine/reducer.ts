@@ -78,6 +78,12 @@ export const votingMachineReducer = (
 
       return {
         ...state,
+        currentCandidate: {} as Candidato,
+        isBlankVote: false,
+        isCheckingVote: false,
+        isNullVote: false,
+        isPartyVote: false,
+        keyInput: [],
         stage: etapas[state.stageIndex],
       };
 

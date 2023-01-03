@@ -7,6 +7,7 @@ import {
   setIsNullVote,
   setIsPartyVote,
   setKeyInput,
+  setStage,
 } from "redux/voting-machine/actions";
 import {
   selectCandidateByNumber,
@@ -33,9 +34,14 @@ export const useVotingMachine = (): UseVotingMachine => {
   const [playConfirmVoteSound] = useSound<string>(
     "/assets/audios/confirm-vote-sound.mp3"
   );
-  const { isBlankVote, keyInput, stage, isCheckingVote } = useSelector(
-    selectVotingMachineStates
-  );
+  const {
+    isBlankVote,
+    keyInput,
+    stage,
+    isCheckingVote,
+    isPartyVote,
+    isNullVote,
+  } = useSelector(selectVotingMachineStates);
   const candidateFound = useSelector(selectCandidateByNumber);
   const candidatePartyFound = useSelector(selectCandidateParty);
 
@@ -48,6 +54,8 @@ export const useVotingMachine = (): UseVotingMachine => {
       if (candidatePartyFound && isAvailableToPartyVote) {
         console.log("VOTO DE LEGENDA");
         console.log(candidatePartyFound);
+
+        dispatch(setIsPartyVote(true));
       }
 
       if (!candidateFound && !candidatePartyFound) {
@@ -111,8 +119,18 @@ export const useVotingMachine = (): UseVotingMachine => {
   };
 
   const onConfirmButtonPress = (): void => {
-    if (isBlankVote && !isCheckingVote) {
+    if (keyInput.length === stage.campo_digitos.length && !isCheckingVote) {
       playConfirmVoteSound();
+      dispatch(setStage());
+    } else if (isPartyVote && keyInput.length >= 2 && !isCheckingVote) {
+      playConfirmVoteSound();
+      dispatch(setStage());
+    } else if (isBlankVote && !isCheckingVote) {
+      playConfirmVoteSound();
+      dispatch(setStage());
+    } else if (isNullVote && !isCheckingVote) {
+      playConfirmVoteSound();
+      dispatch(setStage());
     } else playKeyPressSound();
   };
 
