@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import {
   clearKeyInput,
+  setCurrentCandidate,
   setIsBlankVote,
   setIsCheckingVote,
   setIsNullVote,
@@ -12,6 +13,7 @@ import {
   selectCandidateParty,
   selectVotingMachineStates,
 } from "redux/voting-machine/selectors";
+import type { Candidato } from "types/candidato";
 import useSound from "use-sound";
 
 interface UseVotingMachine {
@@ -65,6 +67,8 @@ export const useVotingMachine = (): UseVotingMachine => {
       if (candidateFound) {
         console.log("CANDIDATO ENCONTRADO");
         console.log(candidateFound);
+
+        dispatch(setCurrentCandidate(candidateFound as Candidato));
       }
     }
   };
@@ -99,9 +103,11 @@ export const useVotingMachine = (): UseVotingMachine => {
     playKeyPressSound();
 
     dispatch(clearKeyInput());
+    dispatch(setCurrentCandidate({} as Candidato));
     dispatch(setIsBlankVote(false));
-    dispatch(setIsPartyVote(false));
+    dispatch(setIsCheckingVote(false));
     dispatch(setIsNullVote(false));
+    dispatch(setIsPartyVote(false));
   };
 
   const onConfirmButtonPress = (): void => {

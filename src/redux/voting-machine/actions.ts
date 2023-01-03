@@ -1,8 +1,16 @@
+import type { Candidato } from "types/candidato";
 import type { PayloadAction } from "types/redux";
 import { VotingMachineActionTypes } from "./action-types";
 
 export const clearKeyInput = (): PayloadAction<null> => ({
   type: VotingMachineActionTypes.CLEAR_KEY_INPUT,
+});
+
+export const setCurrentCandidate = (
+  payload: Candidato
+): PayloadAction<typeof payload> => ({
+  type: VotingMachineActionTypes.SET_CURRENT_CANDIDATE,
+  payload,
 });
 
 export const setIsBlankVote = (
