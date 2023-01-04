@@ -5,8 +5,8 @@ import type { NextPage } from "next";
 import { useEffect } from "react";
 import { useSelector } from "react-redux";
 import { selectVotingMachineStates } from "redux/voting-machine/selectors";
-import VotingMachineBox from "../../public/assets/images/voting-machine-box.svg";
-import VotingMachineBrand from "../../public/assets/images/voting-machine-brand.svg";
+import VotingMachineBoxIcon from "../../public/assets/icons/voting-machine-box-icon.svg";
+import VotingMachineBrandIcon from "../../public/assets/icons/voting-machine-brand-icon.svg";
 
 const Home: NextPage = (): JSX.Element => {
   const { handleVoting, handleVoteChecking } = useVotingMachine();
@@ -22,11 +22,11 @@ const Home: NextPage = (): JSX.Element => {
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-zinc-800">
-      <VotingMachineBox />
+      <VotingMachineBoxIcon />
       <div className="flex flex-col gap-20 absolute translate-x-[-3px] translate-y-[-60px]">
         <Screen />
         <div className="flex gap-[15px] items-end justify-center">
-          <VotingMachineBrand />
+          <VotingMachineBrandIcon />
           <Keyboard />
         </div>
       </div>

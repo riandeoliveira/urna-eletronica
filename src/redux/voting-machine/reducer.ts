@@ -8,6 +8,7 @@ interface VotingMachineState {
   currentCandidate: Candidato;
   isBlankVote: boolean;
   isCheckingVote: boolean;
+  isFinishedVote: boolean;
   isNullVote: boolean;
   isPartyVote: boolean;
   keyInput: string[];
@@ -19,6 +20,7 @@ const initialState: VotingMachineState = {
   currentCandidate: {} as Candidato,
   isBlankVote: false,
   isCheckingVote: false,
+  isFinishedVote: true,
   isNullVote: false,
   isPartyVote: false,
   keyInput: [],
@@ -53,6 +55,12 @@ export const votingMachineReducer = (
       return {
         ...state,
         isCheckingVote: action.payload,
+      };
+
+    case VotingMachineActionTypes.SET_IS_FINISHED_VOTE:
+      return {
+        ...state,
+        isFinishedVote: true,
       };
 
     case VotingMachineActionTypes.SET_IS_NULL_VOTE:

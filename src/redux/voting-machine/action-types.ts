@@ -3,6 +3,7 @@ interface IVotingMachineActionTypes {
   SET_CURRENT_CANDIDATE: string;
   SET_IS_BLANK_VOTE: string;
   SET_IS_CHECKING_VOTE: string;
+  SET_IS_FINISHED_VOTE: string;
   SET_IS_NULL_VOTE: string;
   SET_IS_PARTY_VOTE: string;
   SET_KEY_INPUT: string;
@@ -14,6 +15,7 @@ export const VotingMachineActionTypes: IVotingMachineActionTypes = {
   SET_CURRENT_CANDIDATE: "votingMachine/setCurrentCandidate",
   SET_IS_BLANK_VOTE: "votingMachine/setIsBlankVote",
   SET_IS_CHECKING_VOTE: "votingMachine/setIsCheckingVote",
+  SET_IS_FINISHED_VOTE: "votingMachine/setIsFinishedVote",
   SET_IS_NULL_VOTE: "votingMachine/setIsNullVote",
   SET_IS_PARTY_VOTE: "votingMachine/setIsPartyVote",
   SET_KEY_INPUT: "votingMachine/setKeyInput",

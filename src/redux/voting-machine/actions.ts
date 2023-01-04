@@ -27,6 +27,13 @@ export const setIsCheckingVote = (
   payload,
 });
 
+export const setIsFinishedVote = (
+  payload: boolean
+): PayloadAction<typeof payload> => ({
+  type: VotingMachineActionTypes.SET_IS_FINISHED_VOTE,
+  payload,
+});
+
 export const setIsNullVote = (
   payload: boolean
 ): PayloadAction<typeof payload> => ({
