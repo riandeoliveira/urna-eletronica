@@ -54,7 +54,8 @@ export const useVotingMachine = (): UseVotingMachine => {
 
     if (
       stage.cargo.tipo === "senador" &&
-      keyInput.length === stage.campo_digitos.length
+      keyInput.length === stage.campo_digitos.length &&
+      !candidateFound
     ) {
       console.log("VOTO NULO");
       dispatch(setIsNullVote(true));

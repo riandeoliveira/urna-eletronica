@@ -1,6 +1,19 @@
+import { useSelector } from "react-redux";
+import { selectVotingMachineStates } from "redux/voting-machine/selectors";
+
 export const CheckingVote = (): JSX.Element => {
+  const { stage, isBlankVote, isNullVote, currentCandidate } = useSelector(
+    selectVotingMachineStates
+  );
+
   return (
-    <span className="absolute translate-x-[114px] translate-y-[14px] text-[28px] animate-fast-pulse">
+    <span
+      className={`absolute text-[28px] animate-fast-pulse translate-y-[14px] ${
+        stage.cargo.tipo === "senador" && !isBlankVote && !isNullVote
+          ? "translate-x-[20px]"
+          : "translate-x-[114px]"
+      }`}
+    >
       CONFIRA O SEU VOTO
     </span>
   );
