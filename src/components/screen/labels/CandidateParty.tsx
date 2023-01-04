@@ -1,20 +1,26 @@
 import { useSelector } from "react-redux";
-import { selectVotingMachineStates } from "redux/voting-machine/selectors";
+import {
+  selectCandidateParty,
+  selectVotingMachineStates,
+} from "redux/voting-machine/selectors";
 
 export const CandidateParty = (): JSX.Element => {
   const { stage } = useSelector(selectVotingMachineStates);
+  const candidatePartyFound = useSelector(selectCandidateParty);
+
+  const isAvailableToPartyVote: boolean =
+    stage.cargo.tipo === "deputado_federal" ||
+    stage.cargo.tipo === "deputado_estadual";
 
   return (
     <div
       className={`absolute flex translate-x-[3px] ${
-        stage.cargo.tipo === "senador"
-          ? "translate-y-[150px]"
-          : "translate-y-[175px]"
+        isAvailableToPartyVote ? "translate-y-[175px]" : "translate-y-[150px]"
       }`}
     >
       <span className="text-[14px]">Partido:</span>
       <div className="translate-x-[23px]">
-        <span>PFest</span>
+        <span>{candidatePartyFound?.nome}</span>
       </div>
     </div>
   );

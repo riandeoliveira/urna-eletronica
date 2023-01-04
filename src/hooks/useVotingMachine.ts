@@ -53,7 +53,7 @@ export const useVotingMachine = (): UseVotingMachine => {
     console.log(stage);
 
     if (
-      stage.cargo.tipo === "senador" &&
+      !isAvailableToPartyVote &&
       keyInput.length === stage.campo_digitos.length &&
       !candidateFound
     ) {
