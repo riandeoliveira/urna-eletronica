@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { CandidateImageArea } from "components/screen/CandidateImageArea";
 import { useSelector } from "react-redux";
 import { selectVotingMachineStates } from "redux/voting-machine/selectors";
 import { Footer } from "../Footer";
@@ -7,9 +7,10 @@ import { CandidateJob } from "../labels/CandidateJob";
 import { CandidateName } from "../labels/CandidateName";
 import { CandidateNumber } from "../labels/CandidateNumber";
 import { CandidateParty } from "../labels/CandidateParty";
+import { Substitutes } from "../labels/Substitutes";
 
 export const CandidateProfile = (): JSX.Element => {
-  const { currentCandidate } = useSelector(selectVotingMachineStates);
+  const { stage } = useSelector(selectVotingMachineStates);
 
   return (
     <>
@@ -18,14 +19,8 @@ export const CandidateProfile = (): JSX.Element => {
       <CandidateNumber />
       <CandidateName />
       <CandidateParty />
-      <div className="w-fit text-center absolute translate-x-[446px]">
-        <Image
-          src={`https://www.tse.jus.br/hotsites/simulador-de-votacao/image/figuras/135x145/24bpp/${currentCandidate.foto}.jpg`}
-          alt="Imagem do candidato selecionado"
-          width={90}
-          height={145}
-        />
-      </div>
+      {stage.cargo.tipo === "senador" && <Substitutes />}
+      <CandidateImageArea />
       <Footer />
     </>
   );
