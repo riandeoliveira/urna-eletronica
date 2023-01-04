@@ -1,9 +1,9 @@
 import { useSelector } from "react-redux";
 import { selectVotingMachineStates } from "redux/voting-machine/selectors";
-import { BlankVote } from "./stage/BlankVote";
+import { BlankVoteStage } from "./stage/BlankVoteStage";
 import { CandidateProfile } from "./stage/CandidateProfile";
-import { NullVote } from "./stage/NullVote";
-import { PartyVote } from "./stage/PartyVote";
+import { NullVoteStage } from "./stage/NullVoteStage";
+import { PartyVoteStage } from "./stage/PartyVoteStage";
 import { Stage } from "./stage/Stage";
 
 export const Screen = (): JSX.Element => {
@@ -12,9 +12,9 @@ export const Screen = (): JSX.Element => {
 
   const renderStages = (): JSX.Element => {
     if (currentCandidate.nome) return <CandidateProfile />;
-    if (isBlankVote) return <BlankVote />;
-    if (isNullVote) return <NullVote />;
-    if (isPartyVote) return <PartyVote />;
+    if (isBlankVote) return <BlankVoteStage />;
+    if (isNullVote) return <NullVoteStage />;
+    if (isPartyVote) return <PartyVoteStage />;
 
     return <Stage />;
   };

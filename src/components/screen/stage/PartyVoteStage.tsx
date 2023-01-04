@@ -1,22 +1,22 @@
 import { useSelector } from "react-redux";
 import { selectVotingMachineStates } from "redux/voting-machine/selectors";
-import { PoliticalJobLabel } from "../labels/PoliticalJobLabel";
 import { Footer } from "../Footer";
 import { Header } from "../Header";
-import { NumberLabel } from "../labels/NumberLabel";
-import { PartyLabel } from "../labels/PartyLabel";
-import { CandidateNotFound } from "../party-vote/CandidateNotFound";
+import { CandidateJob } from "../labels/CandidateJob";
+import { CandidateNotFound } from "../labels/CandidateNotFound";
+import { CandidateNumber } from "../labels/CandidateNumber";
+import { CandidateParty } from "../labels/CandidateParty";
 
-export const PartyVote = (): JSX.Element => {
+export const PartyVoteStage = (): JSX.Element => {
   const { keyInput, stage } = useSelector(selectVotingMachineStates);
 
   return (
     <>
       <Header />
-      <PoliticalJobLabel />
-      <NumberLabel />
+      <CandidateJob />
+      <CandidateNumber />
       <CandidateNotFound />
-      <PartyLabel />
+      <CandidateParty />
       {keyInput.length === stage.campo_digitos.length && (
         <div className="absolute translate-x-[100px] translate-y-[163px]">
           <span className="text-[34px] tracking-[0.5px] animate-fast-pulse">
@@ -24,9 +24,7 @@ export const PartyVote = (): JSX.Element => {
           </span>
         </div>
       )}
-      <div className="translate-y-[196px]">
-        <Footer />
-      </div>
+      <Footer />
     </>
   );
 };

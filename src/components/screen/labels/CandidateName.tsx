@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 import { selectVotingMachineStates } from "redux/voting-machine/selectors";
 
-export const NameLabel = (): JSX.Element => {
+export const CandidateName = (): JSX.Element => {
   const { currentCandidate } = useSelector(selectVotingMachineStates);
 
   return (

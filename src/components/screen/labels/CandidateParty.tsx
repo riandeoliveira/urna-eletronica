@@ -1,4 +1,4 @@
-export const PartyLabel = (): JSX.Element => {
+export const CandidateParty = (): JSX.Element => {
   return (
     <div className="absolute translate-x-[3px] translate-y-[146px] flex">
       <span className="text-[14px]">Partido:</span>
