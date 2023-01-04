@@ -31,16 +31,16 @@ export const votingMachineReducer = (
   action: PayloadAction<any>
 ): VotingMachineState => {
   switch (action.type) {
-    case VotingMachineActionTypes.SET_CURRENT_CANDIDATE:
-      return {
-        ...state,
-        currentCandidate: action.payload,
-      };
-
     case VotingMachineActionTypes.CLEAR_KEY_INPUT:
       return {
         ...state,
         keyInput: [],
+      };
+
+    case VotingMachineActionTypes.SET_CURRENT_CANDIDATE:
+      return {
+        ...state,
+        currentCandidate: action.payload,
       };
 
     case VotingMachineActionTypes.SET_IS_BLANK_VOTE:
