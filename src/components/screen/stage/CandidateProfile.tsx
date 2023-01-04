@@ -7,7 +7,7 @@ import { CandidateJob } from "../labels/CandidateJob";
 import { CandidateName } from "../labels/CandidateName";
 import { CandidateNumber } from "../labels/CandidateNumber";
 import { CandidateParty } from "../labels/CandidateParty";
-import { Substitutes } from "../labels/Substitutes";
+import { CandidateSubstitutes } from "../labels/CandidateSubstitutes";
 
 export const CandidateProfile = (): JSX.Element => {
   const { stage } = useSelector(selectVotingMachineStates);
@@ -19,7 +19,7 @@ export const CandidateProfile = (): JSX.Element => {
       <CandidateNumber />
       <CandidateName />
       <CandidateParty />
-      {stage.cargo.tipo === "senador" && <Substitutes />}
+      {stage.cargo.tipo === "senador" && <CandidateSubstitutes />}
       <CandidateImageArea />
       <Footer />
     </>

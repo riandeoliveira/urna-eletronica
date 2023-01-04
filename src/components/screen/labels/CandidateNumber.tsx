@@ -8,7 +8,7 @@ export const CandidateNumber = (): JSX.Element => {
 
   return (
     <>
-      {isNullVote || isPartyVote ? (
+      {isNullVote || isPartyVote || keyInput.length === stage.campo_digitos.length ? (
         <span
           className={`absolute text-[15px] translate-x-[3px] ${
             stage.cargo.tipo === "senador"
