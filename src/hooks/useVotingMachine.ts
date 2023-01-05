@@ -35,9 +35,6 @@ export const useVotingMachine = (): UseVotingMachine => {
   const [playVoteConfirmationSound] = useSound<string>(
     "/assets/audios/vote-confirmation-sound.mp3"
   );
-  const [playVoteCompletionSound] = useSound(
-    "/assets/audios/vote-completion-sound.mp3"
-  );
   const {
     isBlankVote,
     keyInput,

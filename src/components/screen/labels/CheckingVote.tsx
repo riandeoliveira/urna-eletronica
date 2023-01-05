@@ -2,7 +2,7 @@ import { useSelector } from "react-redux";
 import { selectVotingMachineStates } from "redux/voting-machine/selectors";
 
 export const CheckingVote = (): JSX.Element => {
-  const { stage, isBlankVote, isNullVote, currentCandidate } = useSelector(
+  const { stage, isBlankVote, isNullVote } = useSelector(
     selectVotingMachineStates
   );
 

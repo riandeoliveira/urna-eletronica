@@ -1,14 +1,14 @@
 {
   "name": "urna-eletronica",
-  "description": "<YOUR_PROJECT_DESCRIPTION>",
-  "version": "0.1.0",
+  "description": "Simulador web totalmente funcional da Nova Urna Eletrônica que foi utilizada pela primeira vez nas Eleições Brasileiras de 2022.",
+  "version": "1.0.0",
   "license": "MIT",
   "private": true,
   "homepage": "<YOUR_PROJECT_URL>",
   "main": "src/pages/_app.tsx",
   "author": {
     "name": "Rian Oliveira",
-    "email": "<YOUR_EMAIL>"
+    "email": "riandiasdeoliveira2001@gmail.com"
   },
   "scripts": {
     "build": "next build",
@@ -24,7 +24,6 @@
     "test": "jest"
   },
   "dependencies": {
-    "@prisma/client": "^4.6.1",
     "@svgr/webpack": "^6.5.1",
     "axios": "^1.1.3",
     "moment": "^2.29.4",
@@ -53,14 +52,21 @@
     "jest-environment-jsdom": "^29.3.1",
     "postcss": "^8.4.19",
     "prettier": "^2.7.1",
-    "prisma": "^4.6.1",
     "redux": "^4.2.0",
     "tailwindcss": "^3.2.4",
     "typescript": "^4.8.4"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/riandeoliveira/<YOUR_PROJECT_NAME>.git"
+    "url": "https://github.com/riandeoliveira/UrnaEletronica.git"
   },
-  "keywords": []
+  "keywords": [
+    "brazil",
+    "javascript",
+    "nextjs",
+    "react",
+    "tailwindcss",
+    "typescript",
+    "urna-eletronica"
+  ]
 }
