@@ -17,11 +17,11 @@ export const Screen = (): JSX.Element => {
   } = useSelector(selectVotingMachineStates);
 
   const renderStages = (): JSX.Element => {
+    if (isFinishedVote) return <FinishVote />;
     if (currentCandidate.nome) return <CandidateProfile />;
     if (isBlankVote) return <BlankVoteStage />;
     if (isNullVote) return <NullVoteStage />;
     if (isPartyVote) return <PartyVoteStage />;
-    if (isFinishedVote) return <FinishVote />;
 
     return <Stage />;
   };

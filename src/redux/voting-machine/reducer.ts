@@ -20,7 +20,7 @@ const initialState: VotingMachineState = {
   currentCandidate: {} as Candidato,
   isBlankVote: false,
   isCheckingVote: false,
-  isFinishedVote: true,
+  isFinishedVote: false,
   isNullVote: false,
   isPartyVote: false,
   keyInput: [],

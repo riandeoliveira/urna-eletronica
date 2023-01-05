@@ -4,6 +4,7 @@ import {
   setCurrentCandidate,
   setIsBlankVote,
   setIsCheckingVote,
+  setIsFinishedVote,
   setIsNullVote,
   setIsPartyVote,
   setKeyInput,
@@ -31,8 +32,11 @@ export const useVotingMachine = (): UseVotingMachine => {
   const [playKeyPressSound] = useSound<string>(
     "/assets/audios/key-press-sound.mp3"
   );
-  const [playConfirmVoteSound] = useSound<string>(
-    "/assets/audios/confirm-vote-sound.mp3"
+  const [playVoteConfirmationSound] = useSound<string>(
+    "/assets/audios/vote-confirmation-sound.mp3"
+  );
+  const [playVoteCompletionSound] = useSound(
+    "/assets/audios/vote-completion-sound.mp3"
   );
   const {
     isBlankVote,
@@ -41,9 +45,14 @@ export const useVotingMachine = (): UseVotingMachine => {
     isCheckingVote,
     isPartyVote,
     isNullVote,
+    isFinishedVote,
   } = useSelector(selectVotingMachineStates);
   const candidateFound = useSelector(selectCandidateByNumber);
   const candidatePartyFound = useSelector(selectCandidateParty);
+
+  const handleFinishVoting = (): void => {
+    dispatch(setIsFinishedVote(true));
+  };
 
   const handleVoting = (): void => {
     const isAvailableToPartyVote: boolean =
@@ -103,7 +112,11 @@ export const useVotingMachine = (): UseVotingMachine => {
   const onKeyButtonPress = (keyPress: string): void => {
     playKeyPressSound();
 
-    if (!isBlankVote && keyInput.length !== stage.campo_digitos.length) {
+    if (
+      !isBlankVote &&
+      keyInput.length !== stage.campo_digitos.length &&
+      !isFinishedVote
+    ) {
       dispatch(setKeyInput(keyPress));
     }
   };
@@ -131,17 +144,29 @@ export const useVotingMachine = (): UseVotingMachine => {
 
   const onConfirmButtonPress = (): void => {
     if (keyInput.length === stage.campo_digitos.length && !isCheckingVote) {
-      playConfirmVoteSound();
-      dispatch(setStage());
+      playVoteConfirmationSound();
+
+      if (stage.cargo.tipo === "presidente") {
+        handleFinishVoting();
+      } else dispatch(setStage());
     } else if (isPartyVote && keyInput.length >= 2 && !isCheckingVote) {
-      playConfirmVoteSound();
-      dispatch(setStage());
+      playVoteConfirmationSound();
+
+      if (stage.cargo.tipo === "presidente") {
+        handleFinishVoting();
+      } else dispatch(setStage());
     } else if (isBlankVote && !isCheckingVote) {
-      playConfirmVoteSound();
-      dispatch(setStage());
+      playVoteConfirmationSound();
+
+      if (stage.cargo.tipo === "presidente") {
+        handleFinishVoting();
+      } else dispatch(setStage());
     } else if (isNullVote && !isCheckingVote) {
-      playConfirmVoteSound();
-      dispatch(setStage());
+      playVoteConfirmationSound();
+
+      if (stage.cargo.tipo === "presidente") {
+        handleFinishVoting();
+      } else dispatch(setStage());
     } else playKeyPressSound();
   };
 
