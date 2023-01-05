@@ -41,7 +41,7 @@ O design visual desta Urna Eletrônica não é de minha autoria, ele pertence a 
 
 ## 💻 Como acessar
 
-<!-- Onde a sua aplicação está hospedada? -->
+A aplicação está hospedada na **Vercel** e pode ser acessada [aqui](https://urna-eletronica-three.vercel.app/).
 
 ## 🛠️ Tecnologias utilizadas
 
