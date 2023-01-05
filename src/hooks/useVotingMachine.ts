@@ -59,43 +59,30 @@ export const useVotingMachine = (): UseVotingMachine => {
       stage.cargo.tipo === "deputado_federal" ||
       stage.cargo.tipo === "deputado_estadual";
 
-    console.log(stage);
-
     if (
       !isAvailableToPartyVote &&
       keyInput.length === stage.campo_digitos.length &&
       !candidateFound
     ) {
-      console.log("VOTO NULO");
       dispatch(setIsNullVote(true));
     }
 
     if (keyInput.length === 2 && isAvailableToPartyVote) {
       if (candidatePartyFound) {
-        console.log("VOTO DE LEGENDA");
-        console.log(candidatePartyFound);
-
         dispatch(setIsPartyVote(true));
       }
 
       if (!candidateFound && !candidatePartyFound) {
-        console.log("VOTO NULO");
         dispatch(setIsNullVote(true));
       }
 
       if (!candidateFound && candidatePartyFound) {
-        console.log("CANDIDATO INEXISTENTE");
-        console.log(candidatePartyFound);
-
         dispatch(setIsPartyVote(true));
       }
     }
 
     if (keyInput.length === stage.campo_digitos.length) {
       if (candidateFound) {
-        console.log("CANDIDATO ENCONTRADO");
-        console.log(candidateFound);
-
         dispatch(setCurrentCandidate(candidateFound as Candidato));
       }
     }
