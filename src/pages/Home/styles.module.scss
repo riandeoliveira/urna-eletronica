@@ -1,0 +1,24 @@
+@use "../../styles/" as *;
+
+.home_area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #27272a;
+}
+
+.voting_machine {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  position: absolute;
+  transform: translate(-3px, -60px);
+}
+
+.keyboard {
+  display: flex;
+  gap: 15px;
+  align-items: end;
+  justify-content: center;
+}

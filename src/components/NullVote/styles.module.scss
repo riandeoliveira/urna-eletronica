@@ -1,0 +1,14 @@
+@use "../../styles" as *;
+
+.label {
+  position: absolute;
+  font-size: 36px;
+  letter-spacing: 0.5px;
+  animation: $fast-pulse;
+  transform: translate(160px, 184px);
+  font-family: $screen-font, $default-font;
+
+  &[data-position="true"] {
+    transform: translate(160px, 170px);
+  }
+}

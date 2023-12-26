@@ -1,0 +1,9 @@
+@use "../../styles" as *;
+
+.label {
+  position: absolute;
+  transform: translate(100px, 108px);
+  font-size: 36px;
+  animation: $fast-pulse;
+  font-family: $screen-font, $default-font;
+}

@@ -1,0 +1,23 @@
+@use "../../styles" as *;
+
+.button {
+  width: 94px;
+  height: 35px;
+  background-color: $orange;
+  color: $black;
+  border-radius: 6px;
+  box-shadow: inset -3px -3px 0 1px rgb(148 26 0 / 80%);
+  transition: all cubic-bezier(.4, 0, .2, 1) 0.1s;
+  display: flex;
+  padding-left: 3px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  line-height: 1.5;
+
+  &:active {
+    box-shadow: inset 1px 1px 0 1px rgb(148 26 0 / 80%);
+    padding-left: 6px;
+    padding-top: 2px;
+  }
+}

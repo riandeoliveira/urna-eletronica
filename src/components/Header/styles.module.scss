@@ -1,0 +1,10 @@
+@use "../../styles" as *;
+
+.label {
+  position: absolute;
+  transform: translate(4px, 5px);
+  font-size: 15px;
+  color: #333;
+  letter-spacing: 0.5px;
+  font-family: $screen-font, $default-font;
+}

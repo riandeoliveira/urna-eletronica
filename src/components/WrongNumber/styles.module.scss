@@ -1,0 +1,13 @@
+@use "../../styles" as *;
+
+.label {
+  position: absolute;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  transform: translate(3px, 110px);
+  font-family: $screen-font, $default-font;
+
+  &[data-available-to-party-vote="true"] {
+    transform: translate(3px, 150px);
+  }
+}

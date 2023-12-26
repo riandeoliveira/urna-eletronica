@@ -1,0 +1,30 @@
+@use "../../styles" as *;
+
+.keyboard {
+  display: flex;
+  gap: 22px;
+}
+
+.key_buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.key_buttons_container {
+  display: grid;
+  gap: 11px 15px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.key_buttons_last {
+  display: flex;
+  justify-content: center;
+}
+
+.special_buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  font-size: 14px;
+}

@@ -1,0 +1,15 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "eamodio.gitlens",
+    "editorconfig.editorconfig",
+    "esbenp.prettier-vscode",
+    "mikestead.dotenv",
+    "naumovs.color-highlight",
+    "redhat.vscode-xml",
+    "stylelint.vscode-stylelint",
+    "visualstudioexptteam.vscodeintellicode",
+    "wayou.vscode-todo-highlight",
+    "wix.vscode-import-cost",
+  ]
+}

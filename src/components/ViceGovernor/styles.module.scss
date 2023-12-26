@@ -1,0 +1,17 @@
+@use "../../styles" as *;
+
+.vice_governor_area {
+  position: absolute;
+  transform: translate(3px, 190px);
+  display: flex;
+}
+
+.label {
+  font-size: 14px;
+  font-family: $screen-font, $default-font;
+}
+
+.name {
+  transform: translateX(20px);
+  font-family: $screen-font, $default-font;
+}

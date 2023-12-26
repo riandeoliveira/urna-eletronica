@@ -1,0 +1,10 @@
+@use "../../styles" as *;
+
+.label {
+  font-size: 13px;
+  position: absolute;
+  top: 42%;
+  right: 10px;
+  animation: $fast-pulse;
+  font-family: $screen-font, $default-font
+}
