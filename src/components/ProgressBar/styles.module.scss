@@ -1,0 +1,32 @@
+@use "../../styles" as *;
+
+.progress_bar_area {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  transform: translateY(32px);
+}
+
+.progress_bar {
+  height: 18px;
+  width: 440px;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bar {
+  height: 18px;
+  border: 1px solid $black;
+  background-color: #008001;
+  position: absolute;
+}
+
+.label {
+  padding-top: 8px;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-family: $screen-font, $default-font;
+}

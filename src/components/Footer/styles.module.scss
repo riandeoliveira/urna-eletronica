@@ -1,0 +1,31 @@
+@use "../../styles" as *;
+
+.footer_area {
+  position: absolute;
+  transform: translateY(237px);
+  width: 88%;
+  border-top: 2px solid #000;
+  line-height: 16px !important;
+  padding-top: 4px;
+}
+
+.footer {
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+}
+
+.first_label {
+  padding-left: 6px;
+  font-family: $screen-font, $default-font;
+}
+
+.second_label {
+  padding-left: 22px;
+  font-family: $screen-font, $default-font;
+}
+
+.third_label {
+  padding-left: 32px;
+  font-family: $screen-font, $default-font;
+}

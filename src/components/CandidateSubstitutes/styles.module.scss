@@ -1,0 +1,22 @@
+@use "../../styles" as *;
+
+.candidate_substitutes {
+  position: absolute;
+  transform: translate(3px, 180px);
+  display: flex;
+  flex-direction: column;
+}
+
+.label_container {
+  display: flex;
+  gap: 16px;
+}
+
+.label {
+  font-size: 14px;
+  font-family: $screen-font, $default-font;
+}
+
+.name {
+  font-family: $screen-font, $default-font;
+}

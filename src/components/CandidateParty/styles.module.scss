@@ -1,0 +1,25 @@
+@use "../../styles" as *;
+
+.candidate_party_area {
+  position: absolute;
+  display: flex;
+  transform: translate(3px, 150px);
+
+  &[data-available-to-party-vote="true"] {
+    transform: translate(3px, 175px);
+  }
+}
+
+.label {
+  font-size: 14px;
+  font-family: $screen-font, $default-font;
+}
+
+.name_container {
+  transform: translateX(23px);
+  display: flex;
+}
+
+.name {
+  font-family: $screen-font, $default-font;
+}

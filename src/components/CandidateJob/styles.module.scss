@@ -1,0 +1,21 @@
+@use "../../styles" as *;
+
+.label {
+  position: absolute;
+  transform: translate(85px, 30px);
+  font-size: 22px;
+  letter-spacing: 1.5px;
+  font-family: $screen-font, $default-font;
+
+  &[data-job-position="senador"] {
+    transform: translate(140px, 30px);
+  }
+
+  &[data-job-position="governador"] {
+    transform: translate(125px, 30px);
+  }
+
+  &[data-job-position="presidente"] {
+    transform: translate(125px, 30px);
+  }
+}

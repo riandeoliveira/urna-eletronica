@@ -1,0 +1,8 @@
+@use "../../styles" as *;
+
+.label {
+  margin-left: 4px;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  font-family: $screen-font, $default-font
+}
