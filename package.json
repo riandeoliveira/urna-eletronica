@@ -21,7 +21,7 @@
     "lint": "npm run eslint & npm run prettier & npm run stylelint",
     "prettier": "prettier --write src/**/*.{js,jsx,ts,tsx} vite.config.ts",
     "start": "vite preview --open",
-    "stylelint": "stylelint --fix src/**/*.scss",
+    "stylelint": "stylelint --fix src/**/*.{module.scss,scss}",
     "test": "vitest --run"
   },
   "dependencies": {
