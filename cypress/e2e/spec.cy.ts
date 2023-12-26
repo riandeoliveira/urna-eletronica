@@ -1,7 +1,5 @@
-describe("Author's GitHub Profile", () => {
-  it("should open the author's github profile", () => {
-    cy.visit("https://github.com/riandeoliveira");
+describe("template spec", () => {
+  it("passes", () => {
+    cy.visit("https://example.cypress.io");
   });
 });
-
-export {};

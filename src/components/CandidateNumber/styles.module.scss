@@ -1,0 +1,54 @@
+@use "../../styles" as *;
+
+.label {
+  position: absolute;
+  font-size: 15px;
+  transform: translate(3px, 100px);
+  font-family: $screen-font, $default-font;
+
+  &[data-number-label-position="senador"] {
+    transform: translate(3px, 76px);
+  }
+
+  &[data-number-label-position="governador"] {
+    transform: translate(3px, 82px);
+  }
+
+  &[data-number-label-position="presidente"] {
+    transform: translate(3px, 82px);
+  }
+}
+
+.number_container {
+  position: absolute;
+  display: flex;
+  gap: 1px;
+  transform: translate(75px, 94px);
+
+  &[data-key-input-position="senador"] {
+    transform: translate(75px, 70px);
+  }
+
+  &[data-key-input-position="governador"] {
+    transform: translate(75px, 75px);
+  }
+
+  &[data-key-input-position="presidente"] {
+    transform: translate(75px, 75px);
+  }
+}
+
+.number {
+  width: 28px;
+  height: 33px;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #666;
+  font-family: $screen-font, $default-font;
+
+  &[data-is-same="true"] {
+    animation: $fade-pulse;
+  }
+}

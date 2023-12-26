@@ -1,0 +1,33 @@
+@use "../../styles" as *;
+
+.candidate_name_area {
+  transform: translate(3px, 140px);
+  position: absolute;
+  display: flex;
+
+  &[data-name-position="senador"] {
+    transform: translate(3px, 110px);
+  }
+
+  &[data-name-position="governador"] {
+    transform: translate(3px, 120px);
+  }
+
+  &[data-name-position="presidente"] {
+    transform: translate(3px, 120px);
+  }
+}
+
+.label {
+  font-size: 15px;
+  font-family: $screen-font, $default-font;
+}
+
+.name_container {
+  transform: translateX(27px);
+  display: flex;
+}
+
+.name {
+  font-family: $screen-font, $default-font;
+}

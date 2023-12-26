@@ -1,0 +1,42 @@
+@use "../../styles" as *;
+
+.loading_container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.moment_container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.moment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.image {
+  margin: 4px;
+}
+
+.finish_label {
+  position: absolute;
+  font-size: 143px;
+  letter-spacing: 1.5px;
+  text-align: center;
+  transform: translate(140px, 40px);
+  font-family: $screen-font, $default-font;
+}
+
+.vote_label {
+  font-size: 35px;
+  color: #acacac;
+  text-align: end;
+  margin-right: 8px;
+  font-family: $screen-font, $default-font;
+}
