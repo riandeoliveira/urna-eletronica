@@ -23,11 +23,11 @@ export const Home = observer((): ReactElement => {
   }, [keyInput]);
 
   return (
-    <div className={styles.home_area}>
+    <div className={styles.home_page}>
       <SVG src={icons.votingMachineBox} />
-      <div className={styles.voting_machine}>
+      <div className={styles.panel}>
         <Screen />
-        <div className={styles.keyboard}>
+        <div className={styles.controls}>
           <SVG src={icons.votingMachineBrand} />
           <Keyboard />
         </div>
