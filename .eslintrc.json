@@ -37,6 +37,7 @@
     "@typescript-eslint/no-require-imports": "error",
     "@typescript-eslint/no-unused-vars": "warn",
     "@typescript-eslint/prefer-for-of": "error",
+    "cypress/no-unnecessary-waiting": "off",
     "eqeqeq": "error",
     "indent": [
       "error",
