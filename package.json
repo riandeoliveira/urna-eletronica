@@ -1,7 +1,7 @@
 {
   "name": "urna-eletronica",
   "description": "Simulador web totalmente funcional da Nova Urna Eletrônica que foi utilizada pela primeira vez nas Eleições Brasileiras de 2022.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "license": "MIT",
   "private": true,
   "homepage": "https://urna-eletronica-three.vercel.app/",
@@ -14,8 +14,9 @@
     "add:component": "node scripts/add-component.mjs",
     "add:store": "node scripts/add-store.mjs",
     "build": "npm run lint && vite build",
-    "coverage": "vitest run --coverage && start coverage/index.html",
-    "cypress": "cypress open",
+    "coverage": "vitest run --coverage",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
     "dev": "vite --open",
     "eslint": "eslint --fix src/**/*.{js,jsx,ts,tsx} vite.config.ts",
     "lint": "npm run eslint & npm run prettier & npm run stylelint",
@@ -25,6 +26,8 @@
     "test": "vitest --run"
   },
   "dependencies": {
+    "@types/lodash": "^4.14.202",
+    "lodash": "^4.17.21",
     "mobx": "^6.12.0",
     "mobx-react-lite": "^4.0.5",
     "moment": "^2.29.4",

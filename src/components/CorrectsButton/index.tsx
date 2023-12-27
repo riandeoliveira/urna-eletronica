@@ -6,7 +6,12 @@ export const CorrectsButton = (): ReactElement => {
   const { onCorrectsButtonPress } = useVotingMachine();
 
   return (
-    <button type="button" onClick={onCorrectsButtonPress} className={styles.button}>
+    <button
+      type="button"
+      onClick={onCorrectsButtonPress}
+      className={styles.button}
+      data-test-id="correct-vote-button"
+    >
       CORRIGE
     </button>
   );

@@ -6,7 +6,12 @@ export const ConfirmButton = (): ReactElement => {
   const { onConfirmButtonPress } = useVotingMachine();
 
   return (
-    <button type="button" onClick={onConfirmButtonPress} className={styles.button}>
+    <button
+      type="button"
+      onClick={onConfirmButtonPress}
+      className={styles.button}
+      data-test-id="confirm-vote-button"
+    >
       CONFIRMA
     </button>
   );
