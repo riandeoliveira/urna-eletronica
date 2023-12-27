@@ -8,5 +8,13 @@ export const PartyVoteFooter = observer((): ReactElement => {
 
   const isAvailableToPartyVote: boolean = isPartyVote && !currentCandidate.nome;
 
-  return <>{isAvailableToPartyVote && <span className={styles.label}>(voto de legenda)</span>}</>;
+  return (
+    <>
+      {isAvailableToPartyVote && (
+        <span className={styles.label} data-test-id="party-vote-secondary-label">
+          (voto de legenda)
+        </span>
+      )}
+    </>
+  );
 });

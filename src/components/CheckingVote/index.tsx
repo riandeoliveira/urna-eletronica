@@ -10,6 +10,7 @@ export const CheckingVote = observer((): ReactElement => {
     <span
       className={styles.label}
       data-position={stage.cargo.tipo === "senador" && !isBlankVote && !isNullVote}
+      data-test-id="check-vote-label"
     >
       CONFIRA O SEU VOTO
     </span>

@@ -9,7 +9,9 @@ export const PartyVote = observer((): ReactElement => {
   return (
     <>
       {keyInput.length === stage.campo_digitos.length && (
-        <span className={styles.label}>VOTO DE LEGENDA</span>
+        <span className={styles.label} data-test-id="party-vote-primary-label">
+          VOTO DE LEGENDA
+        </span>
       )}
     </>
   );
