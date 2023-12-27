@@ -36,8 +36,12 @@ export const FinishVote = (): ReactElement => {
               className={styles.image}
             />
           </div>
-          <span className={styles.finish_label}>FIM</span>
-          <span className={styles.vote_label}>VOTOU</span>
+          <span className={styles.finish_label} data-test-id="end-voting-label">
+            FIM
+          </span>
+          <span className={styles.vote_label} data-test-id="voted-label">
+            VOTOU
+          </span>
           <audio autoPlay src={audios.voteCompletionSound} />
         </div>
       )}

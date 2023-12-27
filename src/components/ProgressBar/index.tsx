@@ -10,7 +10,9 @@ export const ProgressBar = ({ progress }: ProgressBarProps): ReactElement => {
     <div className={styles.progress_bar_area}>
       <div className={styles.progress_bar} />
       <div className={styles.bar} style={{ width: `${progress}%` }} />
-      <span className={styles.label}>Gravando</span>
+      <span className={styles.label} data-test-id="recording-vote-label">
+        Gravando
+      </span>
     </div>
   );
 };

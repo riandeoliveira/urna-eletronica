@@ -9,7 +9,9 @@ export const CandidateNotFound = observer((): ReactElement => {
   return (
     <>
       {keyInput.length === stage.campo_digitos.length && (
-        <span className={styles.label}>CANDIDATO INEXISTENTE</span>
+        <span className={styles.label} data-test-id="non-existent-candidate-label">
+          CANDIDATO INEXISTENTE
+        </span>
       )}
     </>
   );

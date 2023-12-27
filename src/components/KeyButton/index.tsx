@@ -10,7 +10,12 @@ export const KeyButton = ({ keyPress }: KeyButtonProps): ReactElement => {
   const { onKeyButtonPress } = useVotingMachine();
 
   return (
-    <button type="button" onClick={() => onKeyButtonPress(keyPress)} className={styles.button}>
+    <button
+      type="button"
+      onClick={() => onKeyButtonPress(keyPress)}
+      className={styles.button}
+      data-test-id={`key-button-${keyPress}`}
+    >
       {keyPress}
     </button>
   );

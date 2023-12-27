@@ -10,7 +10,11 @@ export const WrongNumber = observer((): ReactElement => {
     stage.cargo.tipo === "deputado_federal" || stage.cargo.tipo === "deputado_estadual";
 
   return (
-    <span className={styles.label} data-available-to-party-vote={isAvailableToPartyVote}>
+    <span
+      className={styles.label}
+      data-available-to-party-vote={isAvailableToPartyVote}
+      data-test-id="wrong-number-label"
+    >
       NÚMERO ERRADO
     </span>
   );

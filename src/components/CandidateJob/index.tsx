@@ -7,7 +7,11 @@ export const CandidateJob = observer((): ReactElement => {
   const { stage, currentCandidate } = votingMachineStore;
 
   return (
-    <span className={styles.label} data-job-position={stage.cargo.tipo}>
+    <span
+      className={styles.label}
+      data-job-position={stage.cargo.tipo}
+      data-test-id="occupation-label"
+    >
       {currentCandidate.sexo === "F" ? stage.cargo.nome_feminino : stage.cargo.nome_masculino}
     </span>
   );

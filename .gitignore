@@ -22,6 +22,7 @@
 bin
 build
 coverage
+cypress/screenshots
 dist
 dist-ssr
 lerna-debug.log*
