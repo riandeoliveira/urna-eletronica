@@ -1,6 +1,14 @@
 @use "../../styles" as *;
 
-.label {
+.not_found_candidate_label {
+  position: absolute;
+  transform: translate(3px, 138px);
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  font-family: $screen-font, $default-font;
+}
+
+.party_vote_label {
   position: absolute;
   transform: translate(100px, 196px);
   font-size: 34px;
