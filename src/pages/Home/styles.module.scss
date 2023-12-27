@@ -1,6 +1,6 @@
 @use "../../styles/" as *;
 
-.home_area {
+.home_page {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -8,7 +8,7 @@
   background-color: #27272a;
 }
 
-.voting_machine {
+.panel {
   display: flex;
   flex-direction: column;
   gap: 80px;
@@ -16,7 +16,7 @@
   transform: translate(-3px, -60px);
 }
 
-.keyboard {
+.controls {
   display: flex;
   gap: 15px;
   align-items: end;

@@ -15,6 +15,19 @@
   flex-direction: column;
 }
 
+.label {
+  position: absolute;
+  font-size: 28px;
+  animation: $fast-pulse;
+  transform: translate(114px, 14px);
+  font-family: $screen-font, $default-font;
+
+  &[data-position="true"] {
+    transform: translate(20px, 14px);
+  }
+}
+
+
 .first_label {
   padding-left: 6px;
   font-family: $screen-font, $default-font;

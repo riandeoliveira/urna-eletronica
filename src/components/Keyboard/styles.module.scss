@@ -1,23 +1,41 @@
 @use "../../styles" as *;
 
-.keyboard {
+._base_special_button {
+  width: 94px;
+  display: flex;
+  padding-left: 3px;
+  cursor: pointer;
+  line-height: 1.5;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all cubic-bezier(.4, 0, .2, 1) 0.1s;
+  color: $black;
+  border-radius: 6px;
+
+  &:active {
+    padding-left: 6px;
+    padding-top: 2px;
+  }
+}
+
+.keyboard_component {
   display: flex;
   gap: 22px;
 }
 
-.key_buttons {
+.numpad {
   display: flex;
   flex-direction: column;
   gap: 11px;
 }
 
-.key_buttons_container {
+.numpad_container {
   display: grid;
   gap: 11px 15px;
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.key_buttons_last {
+.numpad_bottom {
   display: flex;
   justify-content: center;
 }
@@ -27,4 +45,41 @@
   flex-direction: column;
   gap: 11px;
   font-size: 14px;
+}
+
+.blank_button {
+  @extend ._base_special_button;
+
+  height: 35px;
+  background-color: $white;
+  box-shadow: inset -3px -3px 0 1px #838383cc;
+
+  &:active {
+    box-shadow: inset 1px 1px 0 1px #838383cc;
+  }
+}
+
+.correct_button {
+  @extend ._base_special_button;
+
+  height: 35px;
+  background-color: $orange;
+  box-shadow: inset -3px -3px 0 1px #941a00cc;
+
+  &:active {
+    box-shadow: inset 1px 1px 0 1px #941a00cc;
+  }
+}
+
+.confirm_button {
+  @extend ._base_special_button;
+
+  height: 80px;
+  background-color: $green;
+  box-shadow: inset -3px -3px 0 1px #025700cc;
+
+
+  &:active {
+    box-shadow: inset 1px 1px 0 1px #025700cc;
+  }
 }
