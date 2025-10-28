@@ -1,0 +1,24 @@
+{
+  "url": "https://urna-eletronica-three.vercel.app/",
+  "repository_url": "https://github.com/riandeoliveira/urna-eletronica",
+  "thumbnail": "https://raw.githubusercontent.com/riandeoliveira/urna-eletronica/refs/heads/main/.github/assets/thumbnail.png",
+  "is_private": false,
+  "is_new": false,
+  "stack": [
+    "cypress",
+    "nextjs",
+    "react",
+    "tailwind",
+    "ts"
+  ],
+  "info": {
+    "en_us": {
+      "fullName": "Urna Eletrônica",
+      "description": "Fully functional web simulator of the New Electronic Voting Machine, which was used for the first time in the 2022 Brazilian Elections."
+    },
+    "pt_br": {
+      "fullName": "Urna Eletrônica",
+      "description": "Simulador web totalmente funcional da Nova Urna Eletrônica que foi utilizada pela primeira vez nas Eleições Brasileiras de 2022."
+    }
+  }
+}
