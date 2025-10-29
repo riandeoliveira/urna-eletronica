@@ -1,7 +1,7 @@
 {
   "name": "urna-eletronica",
   "description": "Simulador web totalmente funcional da Nova Urna Eletrônica que foi utilizada pela primeira vez nas Eleições Brasileiras de 2022.",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "license": "MIT",
   "private": true,
   "homepage": "https://urna-eletronica-three.vercel.app/",
