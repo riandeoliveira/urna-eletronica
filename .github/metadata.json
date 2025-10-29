@@ -12,11 +12,11 @@
   ],
   "info": {
     "en_us": {
-      "fullName": "Urna Eletrônica",
+      "full_name": "Urna Eletrônica",
       "description": "Fully functional web simulator of the New Electronic Voting Machine, which was used for the first time in the 2022 Brazilian Elections."
     },
     "pt_br": {
-      "fullName": "Urna Eletrônica",
+      "full_name": "Urna Eletrônica",
       "description": "Simulador web totalmente funcional da Nova Urna Eletrônica que foi utilizada pela primeira vez nas Eleições Brasileiras de 2022."
     }
   }
