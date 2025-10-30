@@ -72,10 +72,13 @@
   //
   // Files
   //
-  "files.autoSave": "afterDelay",
+  "files.eol": "\n",
+  "files.exclude": {
+    "**/.git": false
+  },
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
-  "files.trimTrailingWhitespace": false,
+  "files.trimTrailingWhitespace": true,
   //
   // PostCSS
   //

@@ -4,7 +4,6 @@
   "version": "1.2.2",
   "license": "MIT",
   "private": true,
-  "homepage": "https://urna-eletronica-three.vercel.app/",
   "main": "src/main.tsx",
   "author": {
     "name": "Rian Oliveira",
