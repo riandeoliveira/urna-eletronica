@@ -1,14 +1,7 @@
 {
   "name": "urna-eletronica",
-  "description": "Simulador web totalmente funcional da Nova Urna Eletrônica que foi utilizada pela primeira vez nas Eleições Brasileiras de 2022.",
   "version": "1.2.3",
-  "license": "MIT",
   "private": true,
-  "main": "src/main.tsx",
-  "author": {
-    "name": "Rian Oliveira",
-    "email": "riandiasdeoliveira2001@gmail.com"
-  },
   "scripts": {
     "add:component": "node scripts/add-component.mjs",
     "add:store": "node scripts/add-store.mjs",
@@ -36,9 +29,7 @@
     "react-router-dom": "^6.21.1",
     "use-sound": "^4.0.1",
     "uuid": "^9.0.1",
-    "vite-plugin-pwa": "^0.16.7",
-    "vite-plugin-svgr": "^3.3.0",
-    "workbox-window": "^7.0.0"
+    "vite-plugin-svgr": "^3.3.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.45",
